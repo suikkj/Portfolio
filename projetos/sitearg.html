@@ -36,6 +36,14 @@
     </header>
 
     <main class="project-detail-page">
+        <!-- Lightbox Modal -->
+        <div id="lightbox-modal" class="lightbox-modal">
+            <span class="lightbox-close">×</span>
+            <img class="lightbox-content" id="lightbox-image" src="#" alt="">
+            <div id="lightbox-caption"></div>
+            <span class="lightbox-prev">&#10094;</span>
+            <span class="lightbox-next">&#10095;</span>
+        </div>
         <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
             <!-- Header do Projeto -->
             <header class="project-header">
@@ -47,25 +55,19 @@
             <section class="project-description">
                 <h2>Sobre o Projeto</h2>
                 <p>
-                    [COLOQUE AQUI UMA DESCRIÇÃO DETALHADA SOBRE O SITE DE ENIGMAS (ARG). Fale sobre a inspiração, como funciona, o tipo de enigmas, etc.]
+                    O ARG - Site de Enigmas oferece experiências interativas que combinam narrativas envolventes e enigmas desafiadores. Cada jogo é ambientado em um universo fictício onde o usuário deve desvendar pistas, resolver quebra-cabeças complexos e colaborar com outros participantes para avançar na história.
                 </p>
                 <p>
-                    [Continue a descrição, se necessário. Explique o processo de desenvolvimento ou os desafios encontrados.]
+                    Inspirado em jogos de realidade alternativa (ARG), o site apresenta enigmas de dificuldade crescente, testando habilidades de lógica, observação e trabalho em equipe. É ideal para entusiastas de mistérios que buscam um desafio único e imersivo.
                 </p>
             </section>
 
-            <!-- Demonstrativo em Vídeo -->
-            <section class="project-media">
-                <h2>Demonstração em Vídeo</h2>
-                <div class="video-container">
-                    <!-- IMPORTANTE: Substitua 'SEU_ID_DO_VIDEO_AQUI' pelo ID do seu vídeo do YouTube -->
-                    <iframe 
-                        src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO_AQUI" 
-                        title="Demonstração do Site de Enigmas (ARG)" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+            <!-- Galeria de Demonstrações -->
+            <section class="gallery-section">
+                <h2>Galeria de Demonstrações</h2>
+                <div class="gallery-grid">
+                    <img src="../img/Site-ARG.png" alt="Visualização do ARG - Site de Enigmas" class="lightbox-trigger">
+                    <!-- Adicione mais imagens conforme necessário -->
                 </div>
             </section>
 
@@ -73,9 +75,10 @@
             <section class="project-tech-stack">
                 <h2>Tecnologias Utilizadas</h2>
                 <ul>
-                    <li><strong>Frontend:</strong> [Ex: HTML5, CSS3, JavaScript]</li>
-                    <li><strong>Backend:</strong> [Ex: Node.js, Python]</li>
-                    <li><strong>Outros:</strong> [Ex: Git, GitHub, Photoshop]</li>
+                    <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                    <li><strong>Backend:</strong> Node.js com Express</li>
+                    <li><strong>Banco de Dados:</strong> Supabase</li>
+                    <li><strong>Outros:</strong> Git, GitHub, Photoshop, Audacity</li>
                 </ul>
             </section>
 

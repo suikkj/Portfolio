@@ -123,6 +123,16 @@ a:hover {
     box-shadow: 0 8px 25px rgba(97, 218, 251, 0.4); /* Sombra mais forte */
 }
 
+/* Ajuste para garantir que o botão "Ver Todos os Projetos" esteja acessível */
+.projects-preview-section .button {
+    position: relative;
+    z-index: 10; /* Garante que o botão esteja acima de outros elementos */
+}
+.projects-listing-section .button {
+    position: relative;
+    z-index: 10; /* Garante que os botões Ver Detalhes sejam clicáveis */
+}
+
 img { max-width: 100%; height: auto; display: block; }
 ul { list-style: none; padding-left: 0; }
 

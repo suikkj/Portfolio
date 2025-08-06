@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto: Criador de Fichas de RPG - Lucas Oliveira</title>
-    <!-- Estilo principal do site -->
     <link rel="stylesheet" href="../style.css">
-    <!-- Estilo específico para esta página -->
     <link rel="stylesheet" href="sitefichas.css">
 </head>
 <body>
-    <!-- Header (Consistente com as outras páginas) -->
     <header>
         <div class="container">
             <a href="../index.html" class="logo">[Lucas Oliveira]</a>
@@ -36,14 +33,20 @@
     </header>
 
     <main class="project-detail-page">
+        <div id="lightbox-modal" class="lightbox-modal">
+            <span class="lightbox-close">×</span>
+            <img class="lightbox-content" id="lightbox-image" src="#" alt="">
+        <div id="lightbox-caption"></div>
+        <span class="lightbox-prev">&#10094;</span>
+        <span class="lightbox-next">&#10095;</span>
+        </div>
+
         <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
-            <!-- Header do Projeto -->
             <header class="project-header">
                 <h1>Criador de Fichas para RPG</h1>
                 <p class="subtitle">Uma ferramenta web para automatizar a criação de personagens no sistema Tormenta20.</p>
             </header>
 
-            <!-- Descrição do Projeto -->
             <section class="project-description">
                 <h2>Sobre o Projeto</h2>
                 <p>
@@ -54,40 +57,40 @@
                 </p>
             </section>
 
-            <!-- Galeria de Imagens Hystoria -->
             <section class="gallery-section">
                 <h2>Galeria de Demonstrações</h2>
                 <div class="gallery-grid">
-                    <img src="../img/Hystoria/Screenshot_1.png" alt="Demonstração 1 do projeto Hystoria">
-                    <img src="../img/Hystoria/Screenshot_2.png" alt="Demonstração 2 do projeto Hystoria">
-                    <img src="../img/Hystoria/Screenshot_3.png" alt="Demonstração 3 do projeto Hystoria">
-                    <img src="../img/Hystoria/Screenshot_4.png" alt="Demonstração 4 do projeto Hystoria">
-                    <img src="../img/Hystoria/Screenshot_5.png" alt="Demonstração 5 do projeto Hystoria">
-                    <img src="../img/Hystoria/Screenshot_8.png" alt="Demonstração 6 do projeto Hystoria">
+                    <img src="../img/Hystoria/Screenshot_1.png" alt="Tela de configuração de conta" class="lightbox-trigger">
+                    <img src="../img/Hystoria/Screenshot_2.png" alt="Tela de seleção de fichas" class="lightbox-trigger">
+                    <img src="../img/Hystoria/Screenshot_3.png" alt="Detalhes da ficha de personagem" class="lightbox-trigger">
+                    <img src="../img/Hystoria/Screenshot_4.png" alt="Seção de perícias e ações" class="lightbox-trigger">
+                    <img src="../img/Hystoria/Screenshot_5.png" alt="Tela de registro de usuário" class="lightbox-trigger">
+                    <img src="../img/Hystoria/Screenshot_8.png" alt="Tela de login" class="lightbox-trigger">
                 </div>
             </section>
 
-            <!-- (Opcional) Tecnologias Usadas -->
             <section class="project-tech-stack">
                 <h2>Tecnologias Utilizadas</h2>
                 <ul>
                     <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
                     <li><strong>Backend:</strong> Node.js com Express</li>
-                    <li><strong>Outros:</strong> Git, GitHub, Biblioteca para gerar PDF.</li>
+                    <li><strong>Banco de Dados:</strong> Supabase</li>
+                    <li><strong>Outros:</strong> Git, GitHub</li>
                 </ul>
             </section>
 
+            <section class="project-links">
+                <h2>Links</h2>
+                <a href="https://github.com/suikkj/HystoriaSite" class="github-link" target="_blank">Ver Repositório no GitHub</a>
+                </section>
         </div>
     </main>
 
-    <!-- Footer (Consistente com as outras páginas) -->
     <footer>
         <div class="container">
             <p data-i18n="footer.copyright">&copy; 2024 Lucas Oliveira. Todos os direitos reservados.</p>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.9.1/i18next.min.js"></script>
     <script src="../script.js"></script>
 </body>
 </html>
-

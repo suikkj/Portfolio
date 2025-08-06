@@ -36,6 +36,14 @@
     </header>
 
     <main class="project-detail-page">
+        <!-- Lightbox Modal -->
+        <div id="lightbox-modal" class="lightbox-modal">
+            <span class="lightbox-close">×</span>
+            <img class="lightbox-content" id="lightbox-image" src="#" alt="">
+            <div id="lightbox-caption"></div>
+            <span class="lightbox-prev">&#10094;</span>
+            <span class="lightbox-next">&#10095;</span>
+        </div>
         <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
             <!-- Header do Projeto -->
             <header class="project-header">
@@ -54,18 +62,16 @@
                 </p>
             </section>
 
-            <!-- Demonstrativo em Vídeo -->
-            <section class="project-media">
-                <h2>Demonstração em Vídeo</h2>
-                <div class="video-container">
-                    <!-- IMPORTANTE: Substitua 'SEU_ID_DO_VIDEO_AQUI' pelo ID do seu vídeo do YouTube -->
-                    <iframe 
-                        src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO_AQUI" 
-                        title="Demonstração do Projeto EcoMente" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+            <!-- Galeria de Demonstrações -->
+            <section class="gallery-section">
+                <h2>Galeria de Demonstrações</h2>
+                <div class="gallery-grid">
+                    <img src="../img/Ecomente/Screenshot_1.png" alt="Tela de configuração de conta" class="lightbox-trigger">
+                    <img src="../img/Ecomente/Screenshot_2.png" alt="Tela de seleção de fichas" class="lightbox-trigger">
+                    <img src="../img/Ecomente/Screenshot_3.png" alt="Detalhes da ficha de personagem" class="lightbox-trigger">
+                    <img src="../img/Ecomente/Screenshot_4.png" alt="Seção de perícias e ações" class="lightbox-trigger">
+                    <img src="../img/Ecomente/Screenshot_5.png" alt="Tela de registro de usuário" class="lightbox-trigger">
+                    <img src="../img/Ecomente/Screenshot_6.png" alt="Tela de login" class="lightbox-trigger">
                 </div>
             </section>
 
@@ -73,9 +79,10 @@
             <section class="project-tech-stack">
                 <h2>Tecnologias Utilizadas</h2>
                 <ul>
-                    <li><strong>Frontend:</strong> [Ex: HTML5, CSS3, JavaScript]</li>
-                    <li><strong>Backend:</strong> [Ex: Node.js, Python]</li>
-                    <li><strong>Outros:</strong> [Ex: Git, GitHub, Figma]</li>
+                    <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                    <li><strong>Backend:</strong> Node.js com Express</li>
+                    <li><strong>Banco de Dados:</strong> Supabase</li>
+                    <li><strong>Outros:</strong> Git, GitHub</li>
                 </ul>
             </section>
 

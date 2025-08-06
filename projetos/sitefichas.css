@@ -1,24 +1,47 @@
 /* === GALERIA DE DEMONSTRAÇÕES === */
 .gallery-section {
-  padding: 3rem 0;
-  background-color: #111;
+  padding: 4rem 0;
+  background-color: #0a0a10;
+  border-top: 1px solid #2a2a3a; /* Linha divisória */
+  border-bottom: 1px solid #2a2a3a; /* Linha divisória */
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .gallery-section h2 {
   text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
   color: #e0e0e0;
-  margin-bottom: 1.5rem;
 }
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 .gallery-grid img {
   width: 100%;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-  transition: transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #2a2a3a;
 }
 .gallery-grid img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) rotate(1deg); /* Efeito de hover melhorado */
+  box-shadow: 0 8px 25px rgba(97, 218, 251, 0.3);
+}
+
+/* === BOTÃO DE GITHUB === */
+.github-link {
+  display: inline-block;
+  background-color: #24292e;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+.github-link:hover {
+  background-color: #444d56;
 }
