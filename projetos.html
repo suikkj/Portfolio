@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Lucas Oliveira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">[Lucas Oliveira]</a>
+
+            <!-- Botão Hamburger (visível apenas no mobile) -->
+            <button class="hamburger-button" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <!-- Wrapper para navegação e seletor de idioma -->
+            <div class="navigation-wrapper">
+                <nav class="main-nav">
+                    <a href="index.html" data-i18n="nav.inicio">Início</a>
+                    <a href="projetos.html" data-i18n="nav.projetos">Projetos</a>
+                    <a href="sobre.html" data-i18n="nav.sobre">Sobre Mim</a>
+                </nav>
+                <div class="language-selector header-language-selector">
+                    <select id="language-select">
+                        <option value="pt">PT-BR</option>
+                        <option value="en">Eng</option>
+                    </select>
+                </div>
+            </div>
+        </div> <!-- Fim do .container -->
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="todos-projetos" class="projects-listing-section" style="padding-top: 40px; padding-bottom: 40px;">
+                <h1 style="text-align: center; margin-bottom: 40px;">Meus Projetos</h1>
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <img src="/img/SiteFichas_ARG.png" alt="Preview do Site de Fichas">
+                        <h3>Criador de Fichas e Campanhas para RPG</h3>
+                        <p>Um criador de fichas de RPG automático para o sistema de Tormenta20.</p>
+                        <a href="/projetos/sitefichas.html" class="button">Ver Detalhes</a>
+                    </article> 
+
+                    <article class="project-card">
+                        <img src="/img/SiteXodarap.png" alt="Preview do Site da Xodarap">
+                        <h3>Gerenciamento de usuários e site de empresa</h3>
+                        <p>Um sistema de gerenciamento de usuários e um site para a empresa Xodarap.</p>
+                        <a href="/projetos/sitexodarap.html" class="button">Ver Detalhes</a>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="/img/SiteEstoque_DV.png" alt="Preview do Site de Estoque">
+                        <h3>Gerenciador de Estoque para Loja Online</h3>
+                        <p>Um gerenciador eficiente para um estoque de loja online.</p>
+                        <a href="/projetos/estoqueDV.html" class="button">Ver Detalhes</a>
+                    </article>
+
+                    <!-- Card do Projeto Gamma -->
+                    <article class="project-card">
+                        <img src="img/Site-ARG.png" alt="Preview do Site de Enigmas">
+                        <h3>ARG - Site de Enigmas</h3>
+                        <p>Um site feito por diversão para colocar enigmas feitos por mim.</p>
+                        <!-- Link para a página de detalhes do Projeto Gamma -->
+                        <a href="/projetos/sitearg.html" class="button">Ver Detalhes</a>
+                    </article>
+                    <article class="project-card">
+                        <img src="img/EcoMente.png" alt="Preview do Site EcoMente">
+                        <h3>EcoMente</h3>
+                        <p>Um site simulando um curso online para um trabalho da faculdade.</p>
+                        <!-- Link para a página de detalhes do Projeto Gamma -->
+                        <a href="/projetos/ecomente.html" class="button">Ver Detalhes</a>
+                    </article>
+                </div>
+                
+        </div>
+    </main> 
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; 2024 Lucas Oliveira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.9.1/i18next.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

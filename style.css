@@ -1,0 +1,297 @@
+/* === FONTES DO GOOGLE === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:wght@700&display=swap');
+
+/* === RESET BÁSICO & ESTILOS GLOBAIS === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* MODIFICADO */
+body {
+    font-family: 'Inter', sans-serif; /* Fonte mais legível para parágrafos */
+    background-color: #05040A; /* Preto um pouco mais azulado, "deep space" */
+    color: #cccccc; /* Cor de texto principal um pouco mais suave */
+    line-height: 1.7; /* Espaçamento entre linhas melhorado para leitura */
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Efeito de Estrelas (CSS Puro) - Sem alterações */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: transparent;
+    box-shadow: 
+        50px 100px 0 0px #fff, 100px 200px 0 0px #fff, 150px 50px 0 0px #fff,
+        200px 300px 0 1px #fff, 250px 150px 0 0px #fff, 300px 250px 0 0px #fff,
+        350px 80px 0 1px #fff, 400px 180px 0 0px #fff, 450px 280px 0 0px #fff,
+        500px 120px 0 0px #fff, 550px 220px 0 1px #fff, 600px 70px 0 0px #fff,
+        5vw 15vh 0 0px #fff, 15vw 30vh 0 1px #aaa, 25vw 5vh 0 0px #ccc,
+        35vw 40vh 0 0px #fff, 45vw 10vh 0 1px #ddd, 55vw 50vh 0 0px #fff,
+        65vw 20vh 0 0px #eee, 75vw 35vh 0 1px #fff, 85vw 8vh 0 0px #bbb,
+        95vw 45vh 0 0px #fff, 10vw 60vh 0 1px #fff, 20vw 75vh 0 0px #ccc,
+        30vw 55vh 0 0px #fff, 40vw 70vh 0 1px #ddd, 50vw 90vh 0 0px #fff,
+        60vw 65vh 0 0px #eee, 70vw 85vh 0 1px #fff, 80vw 50vh 0 0px #bbb,
+        90vw 70vh 0 0px #fff, 5vw 95vh 0 0px #fff;
+    animation: twinkle 10s infinite linear;
+}
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    background: transparent;
+    box-shadow:
+        100px 300px 0 1px #fff, 250px 500px 0 2px #ddd, 400px 100px 0 1px #fff,
+        550px 400px 0 2px #ccc, 700px 200px 0 1px #fff, 850px 600px 0 2px #eee,
+        10vw 80vh 0 2px #fff, 30vw 25vh 0 1px #bbb, 50vw 70vh 0 2px #fff,
+        70vw 15vh 0 1px #ddd, 90vw 55vh 0 2px #fff;
+    animation: twinkle-slow 15s infinite linear, move-stars 200s infinite linear;
+}
+@keyframes twinkle { 0%, 100% { opacity: 0.8; } 50% { opacity: 0.3; } }
+@keyframes twinkle-slow { 0%, 100% { opacity: 0.6; } 50% { opacity: 0.2; } }
+@keyframes move-stars { from { transform: translate(0, 0); } to { transform: translate(-50%, -50%); } }
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* MODIFICADO */
+h1, h2, h3, header .logo {
+    font-family: 'Roboto Mono', monospace; /* Garante a fonte "tech" para elementos chave */
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.5rem; }
+
+/* MODIFICADO */
+p {
+    margin-bottom: 1rem;
+    color: #b3b3b3; /* Cor mais suave para parágrafos */
+}
+
+a {
+    color: #61dafb;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* === LANGUAGE SELECTOR (Sem alterações) === */
+.language-selector { margin-left: 20px; }
+#language-select { background-color: rgba(25, 25, 40, 0.8); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f0f0f0'%3E%3Cpath d='M8 11.207l-4.604-4.603.707-.707L8 9.793l3.896-3.896.707.707z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 10px center; background-size: 16px 12px; color: #f0f0f0; border: 1px solid #3a3a4a; padding: 8px 12px; border-radius: 5px; font-family: 'Roboto Mono', monospace; font-size: 0.9rem; cursor: pointer; transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+#language-select:hover { background-color: rgba(35, 35, 55, 0.9); border-color: #61dafb; }
+#language-select:focus { outline: none; border-color: #61dafb; box-shadow: 0 0 0 2px rgba(97, 218, 251, 0.4); }
+
+/* === BOTÕES (MODIFICADO) === */
+.button, .cta-button {
+    display: inline-block;
+    background-image: linear-gradient(45deg, #61dafb, #82e9ff); /* Gradiente */
+    color: #0D0E18; /* Texto escuro para contraste */
+    padding: 12px 25px; /* Mais padding */
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease; /* Transição para todas as propriedades */
+    border: none;
+    box-shadow: 0 4px 15px rgba(97, 218, 251, 0.2);
+}
+.button:hover, .cta-button:hover {
+    text-decoration: none;
+    transform: translateY(-3px); /* Efeito de "levantar" mais pronunciado */
+    box-shadow: 0 8px 25px rgba(97, 218, 251, 0.4); /* Sombra mais forte */
+}
+
+img { max-width: 100%; height: auto; display: block; }
+ul { list-style: none; padding-left: 0; }
+
+/* === HEADER & NAVIGATION (MODIFICADO) === */
+header {
+    background-color: rgba(10, 10, 20, 0.6); /* Opacidade reduzida */
+    backdrop-filter: blur(10px); /* NOVO: Efeito "vidro fosco" */
+    -webkit-backdrop-filter: blur(10px); /* Para Safari */
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #2a2a3a;
+}
+header .container { display: flex; align-items: center; position: relative; }
+.navigation-wrapper { display: flex; align-items: center; flex-grow: 1; justify-content: flex-end; }
+.hamburger-button { display: none; background: none; border: none; cursor: pointer; padding: 10px; z-index: 1001; }
+.hamburger-bar { display: block; width: 25px; height: 3px; margin: 5px auto; background-color: #f0f0f0; transition: all 0.3s ease-in-out; }
+header .logo { margin-left: 20px; font-size: 1.8rem; font-weight: bold; color: #fff; transition: transform 0.3s ease, text-shadow 0.3s ease; position: relative; z-index: 1001; }
+header .logo:hover { transform: scale(1.05); text-shadow: 0 0 8px rgba(255, 255, 255, 0.7); text-decoration: none; }
+header .main-nav { position: absolute; left: 50%; transform: translateX(-50%); }
+header .main-nav a { color: #f0f0f0; margin: 0 15px; font-size: 1.1rem; transition: color 0.3s ease; }
+header .main-nav a:hover { color: #61dafb; text-decoration: none; }
+
+/* === FOOTER (Sem alterações) === */
+footer { background-color: rgba(10, 10, 20, 0.8); color: #aaa; text-align: center; padding: 1.5rem 0; margin-top: 3rem; border-top: 1px solid #2a2a3a; }
+
+/* === SEÇÕES COMUNS === */
+section { padding: 60px 0; }
+
+/* === HOME PAGE (index.html) SPECIFIC === */
+.hero { position: relative; overflow: hidden; text-align: center; padding: 80px 0; min-height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.video-background-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; opacity: 50%; }
+.video-background-container iframe { width: 100vw; height: 56.25vw; min-width: 100%; min-height: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.hero-content { position: relative; z-index: 1; }
+.hero h1 {
+    display: inline;
+    font-size: 3.5rem;
+    color: #fff; /* Cor de fallback */
+    /* NOVO: Efeito de texto com gradiente */
+    background: linear-gradient(45deg, #ffffff, #a7eaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.typing-cursor { display: none; width: 3px; background-color: #61dafb; animation: blink 1s step-end infinite; margin-left: 5px; vertical-align: baseline; }
+@keyframes blink { from, to { background-color: transparent } 50% { background-color: #61dafb; } }
+.hero p { display: inline; font-size: 1.3rem; color: #e0e0e0; }
+.hero-text-line + .hero-text-line { max-width: 700px; margin: 1rem auto 2rem auto; }
+
+/* --- Skills Section (Sem alterações) --- */
+.skills-section { background-color: rgba(20, 20, 30, 0.5); }
+.skills-section h2 { text-align: center; margin-bottom: 40px; }
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+.skill-category { background-color: rgba(30, 30, 45, 0.7); padding: 25px; border-radius: 8px; border: 1px solid #3a3a4a; }
+.skill-category h3 { color: #61dafb; margin-bottom: 15px; border-bottom: 1px solid #4a4a5a; padding-bottom: 10px; }
+.tech-icons-container { display: flex; flex-wrap: wrap; gap: 15px; justify-content: flex-start; margin-top: 10px; }
+.tech-icon-cube { width: 60px; height: 60px; background-color: rgba(40, 40, 60, 0.7); border: 1px solid #4a4a5a; border-radius: 8px; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease, background-color 0.2s ease; cursor: default; }
+.tech-icon-cube:hover { transform: scale(1.1); background-color: rgba(50, 50, 70, 0.9); }
+.tech-icon-cube i { font-size: 2.5rem; }
+
+/* --- Projects Preview Section (MODIFICADO) --- */
+.projects-preview-section h2 { text-align: center; margin-bottom: 40px; }
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.project-card {
+    background-color: rgba(25, 25, 40, 0.8);
+    border: 1px solid #3a3a4a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* NOVO: Para a borda de gradiente */
+}
+/* NOVO: Borda com gradiente que aparece no hover */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, #61dafb, #C778DD) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.project-card:hover::before {
+    opacity: 1; /* Mostra a borda no hover */
+}
+.project-card img { width: 100%; height: 200px; object-fit: cover; opacity: 75%; }
+.project-card h3 { padding: 15px 20px 5px 20px; color: #e0e0e0; }
+.project-card p { padding: 0 20px 15px 20px; font-size: 0.95rem; color: #bbb; }
+.project-card .button { margin: 0 20px 20px 20px; }
+
+/* --- Contact Section (Sem alterações) --- */
+.contact-section { text-align: center; background-color: rgba(20, 20, 30, 0.5); }
+
+/* === PROJECT DETAIL PAGE (projeto-*.html) SPECIFIC (MODIFICADO) === */
+.project-detail-page .project-header { text-align: center; margin-bottom: 40px; }
+.project-detail-page .project-header .subtitle { font-size: 1.2rem; color: #bbb; }
+.project-description {
+    margin-bottom: 30px;
+    max-width: 75ch; /* NOVO: Limita a largura para melhor leitura */
+    margin-left: auto;  /* Centraliza */
+    margin-right: auto; /* Centraliza */
+}
+/* NOVO: Justifica o texto dentro da descrição para um visual mais limpo */
+.project-description p {
+    text-align: justify;
+}
+.project-tech-stack, .project-links { margin-bottom: 30px; }
+.project-tech-stack ul li strong { color: #61dafb; }
+
+/* === ABOUT PAGE (sobre.html) SPECIFIC (Sem alterações) === */
+.about-page section { margin-bottom: 30px; }
+.about-page h1 { text-align: center; margin-bottom: 40px; }
+.about-page .profile-image-large { display: block; max-width: 250px; margin: 0 auto 30px auto; border-radius: 50%; border: 4px solid #61dafb; }
+
+/* === RESPONSIVENESS (Sem alterações) === */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    .hero h1 { font-size: 2.8rem; }
+    .hero p { font-size: 1.1rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.3rem; }
+    header .container { position: relative; justify-content: center; }
+    .hamburger-button { display: flex; flex-direction: column; justify-content: space-around; position: absolute; right: 15px; top: 50%; transform: translateY(-50%); z-index: 1002; }
+    .navigation-wrapper { position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; background-color: rgba(15, 15, 25, 0.98); padding: 60px 20px 20px 20px; box-shadow: -2px 0 5px rgba(0,0,0,0.5); z-index: 1000; flex-direction: column; align-items: flex-start; justify-content: flex-start; transition: right 0.4s ease-in-out; }
+    .navigation-wrapper.open { right: 0; }
+    header .main-nav { position: static; display: flex; transform: none; flex-direction: column; align-items: flex-start; width: 100%; }
+    header .main-nav a { margin: 0; font-size: 1.2rem; width: 100%; padding: 15px 5px; }
+    header .main-nav a + a { border-top: 1px solid rgba(58, 58, 74, 0.7); }
+    .header-language-selector { margin-left: 0; margin-top: 30px; width: 100%; }
+    .language-selector { margin-top: 10px; }
+    .skills-grid, .projects-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+    .hero h1 { font-size: 2.2rem; }
+    .hero p { font-size: 1rem; }
+    .button, .cta-button { padding: 8px 15px; font-size: 0.9rem; }
+}
+
+/* === GALERIA DE DEMONSTRAÇÕES (MODIFICADO) === */
+.gallery-section {
+    padding: 4rem 0;
+    background-color: #0a0a10;
+    border-top: 1px solid #2a2a3a; /* NOVO: Linha divisória */
+    border-bottom: 1px solid #2a2a3a; /* NOVO: Linha divisória */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.gallery-section h2 { text-align: center; margin-bottom: 2.5rem; font-size: 2.5rem; color: #e0e0e0; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+.gallery-grid img { width: 100%; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid #2a2a3a; }
+.gallery-grid img:hover {
+    transform: scale(1.05) rotate(1deg); /* Efeito de hover melhorado */
+    box-shadow: 0 8px 25px rgba(97, 218, 251, 0.3);
+}
+
+/* === LIGHTBOX MODAL & GITHUB LINK (Sem alterações) === */
+.lightbox-modal { display: none; position: fixed; z-index: 2000; padding-top: 60px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); }
+.lightbox-content { margin: auto; display: block; max-width: 90%; max-height: 80%; border: 3px solid #61dafb; border-radius: 8px; }
+.lightbox-close { position: absolute; top: 20px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; transition: color 0.3s ease; cursor: pointer; }
+.lightbox-close:hover, .lightbox-close:focus { color: #bbb; }
+#lightbox-caption { text-align: center; color: #ccc; padding: 10px 20px; font-size: 1rem; }
+.github-link { display: inline-block; background-color: #24292e; color: #ffffff; padding: 8px 16px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; transition: background-color 0.3s ease; }
+.github-link:hover { background-color: #444d56; }

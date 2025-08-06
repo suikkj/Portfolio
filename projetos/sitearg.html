@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto: ARG - Site de Enigmas - Lucas Oliveira</title>
+    <!-- Estilo principal do site -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Estilo específico para esta página -->
+    <link rel="stylesheet" href="sitearg.css">
+</head>
+<body>
+    <!-- Header (Consistente com as outras páginas) -->
+    <header>
+        <div class="container">
+            <a href="../index.html" class="logo">[Lucas Oliveira]</a>
+            <button class="hamburger-button" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+            <div class="navigation-wrapper">
+                <nav class="main-nav">
+                    <a href="../index.html" data-i18n="nav.inicio">Início</a>
+                    <a href="../projetos.html" data-i18n="nav.projetos">Projetos</a>
+                    <a href="../sobre.html" data-i18n="nav.sobre">Sobre Mim</a>
+                </nav>
+                <div class="language-selector header-language-selector">
+                    <select id="language-select">
+                        <option value="pt">PT-BR</option>
+                        <option value="en">Eng</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="project-detail-page">
+        <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
+            <!-- Header do Projeto -->
+            <header class="project-header">
+                <h1>ARG - Site de Enigmas</h1>
+                <p class="subtitle">Um site feito por diversão para colocar enigmas feitos por mim.</p>
+            </header>
+
+            <!-- Descrição do Projeto -->
+            <section class="project-description">
+                <h2>Sobre o Projeto</h2>
+                <p>
+                    [COLOQUE AQUI UMA DESCRIÇÃO DETALHADA SOBRE O SITE DE ENIGMAS (ARG). Fale sobre a inspiração, como funciona, o tipo de enigmas, etc.]
+                </p>
+                <p>
+                    [Continue a descrição, se necessário. Explique o processo de desenvolvimento ou os desafios encontrados.]
+                </p>
+            </section>
+
+            <!-- Demonstrativo em Vídeo -->
+            <section class="project-media">
+                <h2>Demonstração em Vídeo</h2>
+                <div class="video-container">
+                    <!-- IMPORTANTE: Substitua 'SEU_ID_DO_VIDEO_AQUI' pelo ID do seu vídeo do YouTube -->
+                    <iframe 
+                        src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO_AQUI" 
+                        title="Demonstração do Site de Enigmas (ARG)" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- (Opcional) Tecnologias Usadas -->
+            <section class="project-tech-stack">
+                <h2>Tecnologias Utilizadas</h2>
+                <ul>
+                    <li><strong>Frontend:</strong> [Ex: HTML5, CSS3, JavaScript]</li>
+                    <li><strong>Backend:</strong> [Ex: Node.js, Python]</li>
+                    <li><strong>Outros:</strong> [Ex: Git, GitHub, Photoshop]</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer (Consistente com as outras páginas) -->
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; 2024 Lucas Oliveira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.9.1/i18next.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
+

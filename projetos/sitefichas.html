@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto: Criador de Fichas de RPG - Lucas Oliveira</title>
+    <!-- Estilo principal do site -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Estilo específico para esta página -->
+    <link rel="stylesheet" href="sitefichas.css">
+</head>
+<body>
+    <!-- Header (Consistente com as outras páginas) -->
+    <header>
+        <div class="container">
+            <a href="../index.html" class="logo">[Lucas Oliveira]</a>
+            <button class="hamburger-button" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+            <div class="navigation-wrapper">
+                <nav class="main-nav">
+                    <a href="../index.html" data-i18n="nav.inicio">Início</a>
+                    <a href="../projetos.html" data-i18n="nav.projetos">Projetos</a>
+                    <a href="../sobre.html" data-i18n="nav.sobre">Sobre Mim</a>
+                </nav>
+                <div class="language-selector header-language-selector">
+                    <select id="language-select">
+                        <option value="pt">PT-BR</option>
+                        <option value="en">Eng</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="project-detail-page">
+        <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
+            <!-- Header do Projeto -->
+            <header class="project-header">
+                <h1>Criador de Fichas para RPG</h1>
+                <p class="subtitle">Uma ferramenta web para automatizar a criação de personagens no sistema Tormenta20.</p>
+            </header>
+
+            <!-- Descrição do Projeto -->
+            <section class="project-description">
+                <h2>Sobre o Projeto</h2>
+                <p>
+                    Este projeto nasceu da minha paixão por RPG de mesa e da necessidade de agilizar o processo de criação de personagens para o sistema Tormenta20. A ferramenta guia o usuário através de um passo a passo intuitivo, cuidando de todos os cálculos de atributos, perícias e habilidades automaticamente.
+                </p>
+                <p>
+                    O objetivo principal era criar uma interface limpa e amigável que pudesse ser usada tanto por jogadores novatos quanto por veteranos. O resultado é uma aplicação web responsiva que permite criar, salvar e exportar fichas de personagem em formato PDF, economizando tempo e evitando erros manuais.
+                </p>
+            </section>
+
+            <!-- Galeria de Imagens Hystoria -->
+            <section class="gallery-section">
+                <h2>Galeria de Demonstrações</h2>
+                <div class="gallery-grid">
+                    <img src="../img/Hystoria/Screenshot_1.png" alt="Demonstração 1 do projeto Hystoria">
+                    <img src="../img/Hystoria/Screenshot_2.png" alt="Demonstração 2 do projeto Hystoria">
+                    <img src="../img/Hystoria/Screenshot_3.png" alt="Demonstração 3 do projeto Hystoria">
+                    <img src="../img/Hystoria/Screenshot_4.png" alt="Demonstração 4 do projeto Hystoria">
+                    <img src="../img/Hystoria/Screenshot_5.png" alt="Demonstração 5 do projeto Hystoria">
+                    <img src="../img/Hystoria/Screenshot_8.png" alt="Demonstração 6 do projeto Hystoria">
+                </div>
+            </section>
+
+            <!-- (Opcional) Tecnologias Usadas -->
+            <section class="project-tech-stack">
+                <h2>Tecnologias Utilizadas</h2>
+                <ul>
+                    <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                    <li><strong>Backend:</strong> Node.js com Express</li>
+                    <li><strong>Outros:</strong> Git, GitHub, Biblioteca para gerar PDF.</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer (Consistente com as outras páginas) -->
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; 2024 Lucas Oliveira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.9.1/i18next.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
+

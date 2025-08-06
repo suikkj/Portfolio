@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <title>Portfólio - Lucas Oliveira</title>
+    <!-- Link para seu CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Estilo principal do site -->
+</head>
+<body>
+    <header>
+        <div class="container">
+         <a href="index.html" class="logo">[Lucas Oliveira]</a>
+
+            <!-- Botão Hamburger (visível apenas no mobile) -->
+            <button class="hamburger-button" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <!-- Wrapper para navegação e seletor de idioma -->
+            <div class="navigation-wrapper">
+                <nav class="main-nav">
+                    <a href="index.html" data-i18n="nav.inicio">Início</a>
+                    <a href="projetos.html" data-i18n="nav.projetos">Projetos</a>
+                    <a href="sobre.html" data-i18n="nav.sobre">Sobre Mim</a>
+                </nav>
+                <div class="language-selector header-language-selector">
+                    <select id="language-select">
+                        <option value="pt">PT-BR</option>
+                        <option value="en">Eng</option>
+                    </select>
+                </div>
+            </div>
+        </div> <!-- Fim do .container -->
+    </header>
+
+    <main>
+        <!-- Seção: Pequena Apresentação -->
+        <section id="apresentacao" class="hero">
+            <div class="video-background-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/X-XZx1o_w-A?autoplay=1&mute=1&loop=1&playlist=X-XZx1o_w-A&controls=0&showinfo=0&autohide=1&modestbranding=1&iv_load_policy=3&disablekb=1" 
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="hero-content container">
+                <div class="hero-text-line">
+                    <h1 data-i18n="hero.title">Olá, eu sou Lucas Oliveira!</h1>
+                    <span class="typing-cursor"></span>
+                </div>
+                <div class="hero-text-line">
+                    <p data-i18n="hero.subtitle">Desenvolvedor Fullstack apaixonado por transformar ideias em realidade digital, construindo aplicações web robustas, escaláveis e intuitivas.</p>
+                    <span class="typing-cursor"></span>
+                </div>
+                <a href="#contato" class="cta-button" data-i18n="hero.contact">Entre em Contato</a>
+                </div>
+        </section>
+
+        <!-- Seção: Linguagens que Programo -->
+        <section id="linguagens" class="skills-section">
+            <div class="container">
+                <h2>Minhas Ferramentas e Tecnologias</h2>
+                <div class="skills-grid">
+
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="tech-icons-container">
+                            <div class="tech-icon-cube" title="HTML5"><i class="devicon-html5-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="CSS3"><i class="devicon-css3-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="JavaScript"><i class="devicon-javascript-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="React"><i class="devicon-react-original colored"></i></div>
+                            <div class="tech-icon-cube" title="Vue.js"><i class="devicon-vuejs-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="Angular"><i class="devicon-angularjs-plain colored"></i></div> 
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="tech-icons-container">
+                            <div class="tech-icon-cube" title="Node.js"><i class="devicon-nodejs-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="Express"><i class="devicon-express-original colored"></i></div>
+                            <div class="tech-icon-cube" title="Python"><i class="devicon-python-plain colored"></i></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Bancos de Dados & Outros</h3>
+                        <div class="tech-icons-container">
+                            <div class="tech-icon-cube" title="MySQL"><i class="devicon-mysql-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="MongoDB"><i class="devicon-mongodb-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="Git"><i class="devicon-git-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="GitHub"><i class="devicon-github-original colored"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Meus Projetos (Abreviada) -->
+        <section id="projetos" class="projects-preview-section">
+            <div class="container">
+                <h2>Projetos em Destaque</h2>
+                <div class="projects-grid">
+                    <!-- Cards de Projeto (exemplo abaixo) -->
+                    <article class="project-card">
+                        <img src="/img/SiteFichas_ARG.png" alt="Preview do Projeto Alpha">
+                        <h3>Criador de Fichas para RPG</h3>
+                        <p>Um criador de fichas de RPG automático para o sistema de Tormenta20.</p>
+                        <a href="/portfolio-site/projetos/projeto-alpha.html" class="button">Ver Detalhes</a>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="/img/SiteEstoque_DV.png" alt="Preview do Projeto Beta">
+                        <h3>Gerenciador de Estoque para Loja Online</h3>
+                        <p>Um gerenciador eficiente para um estoque de loja online.</p>
+                        <a href="/portfolio-site/projetos/projeto-beta.html" class="button">Ver Detalhes</a>
+                    </article>
+                    <!-- Adicione mais cards conforme necessário -->
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                     <a href="projetos.html" class="button">Ver Todos os Projetos</a> <!-- Se tiver uma página dedicada -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato (Opcional, mas recomendado) -->
+        <section id="contato" class="contact-section">
+            <div class="container">
+                <h2>Vamos Conversar?</h2>
+                <p>Estou sempre aberto a novas oportunidades e colaborações. Entre em contato!</p>
+                <p>Email: <a href="mailto:lucasoliprogramador@gmail.com">lucasoliprogramador@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/lucas-oliveira-057a64265/" target="_blank">Lucas Carvalho de Oliveira</a></p>
+                <!-- Pode adicionar um formulário de contato aqui -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+<div id="lightbox-modal" class="lightbox-modal">
+    <span class="lightbox-close">×</span>
+    <img class="lightbox-content" id="lightbox-image" src="#" alt="">
+    <div id="lightbox-caption"></div>
+</div>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; 2024 Lucas Oliveira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.9.1/i18next.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
