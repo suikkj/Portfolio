@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalhes do projeto EcoMente - Lucas Oliveira">
+    <title>Projeto: EcoMente - Lucas Oliveira</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="ecomente.css">
+</head>
+
+<body class="project-detail-page">
+    <header>
+        <div class="container">
+            <a href="../index.html" class="logo">[Lucas Oliveira]</a>
+
+            <button class="hamburger-button" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <div class="navigation-wrapper">
+                <nav class="main-nav">
+                    <a href="../index.html" data-i18n="nav.inicio">Início</a>
+                    <a href="../projetos.html" data-i18n="nav.projetos">Projetos</a>
+                    <a href="../sobre.html" data-i18n="nav.sobre">Sobre Mim</a>
+                </nav>
+                <div class="language-selector header-language-selector">
+                    <select id="language-select">
+                        <option value="pt">PT-BR</option>
+                        <option value="en">Eng</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <header class="project-header reveal">
+                <h1>EcoMente</h1>
+                <p class="subtitle">Plataforma educativa focada em sustentabilidade.</p>
+            </header>
+
+            <section class="project-description reveal">
+                <h2>Sobre o Projeto</h2>
+                <p>
+                    EcoMente é uma plataforma de educação online desenvolvida como projeto acadêmico, com o objetivo de
+                    conscientizar e educar sobre práticas sustentáveis e preservação do meio ambiente.
+                </p>
+                <p>
+                    O sistema simula um ambiente de aprendizado com cursos, quizzes e materiais interativos,
+                    demonstrando habilidades em desenvolvimento fullstack e design de interfaces educacionais.
+                </p>
+
+                <div class="project-links reveal" style="margin-top: 20px;">
+                    <a href="https://github.com/suikkj/EcoMente" target="_blank" class="github-link-small">GitHub
+                        Repo</a>
+                </div>
+            </section>
+
+            <section class="gallery-section reveal">
+                <h2>Galeria de Demonstrações</h2>
+                <div class="gallery-grid">
+                    <img src="../img/Ecomente/Screenshot_1.png" alt="Tela de configuração de conta"
+                        class="lightbox-trigger">
+                    <img src="../img/Ecomente/Screenshot_2.png" alt="Tela de seleção de fichas"
+                        class="lightbox-trigger">
+                    <img src="../img/Ecomente/Screenshot_3.png" alt="Detalhes da ficha de personagem"
+                        class="lightbox-trigger">
+                    <img src="../img/Ecomente/Screenshot_4.png" alt="Seção de perícias e ações"
+                        class="lightbox-trigger">
+                    <img src="../img/Ecomente/Screenshot_5.png" alt="Tela de registro de usuário"
+                        class="lightbox-trigger">
+                    <img src="../img/Ecomente/Screenshot_6.png" alt="Tela de login" class="lightbox-trigger">
+                </div>
+            </section>
+
+            <section class="project-tech-stack reveal">
+                <h2>Tecnologias Utilizadas</h2>
+                <ul>
+                    <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                    <li><strong>Backend:</strong> Node.js, Express</li>
+                    <li><strong>Banco de Dados:</strong> Supabase/MySQL</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-image" src="#" alt="">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; <span id="current-year">2026</span> Lucas Oliveira. Todos os direitos
+                reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.9.1/i18next.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

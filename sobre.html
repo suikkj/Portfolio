@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saiba mais sobre Lucas Oliveira - Desenvolvedor Fullstack e Analista de Dados com experiência em React, Node.js, Power BI e SQL.">
+    <title>Sobre Mim - Lucas Oliveira</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="about-page">
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">[Lucas Oliveira]</a>
+
+            <button class="hamburger-button" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <div class="navigation-wrapper">
+                <nav class="main-nav">
+                    <a href="index.html" data-i18n="nav.inicio">Início</a>
+                    <a href="projetos.html" data-i18n="nav.projetos">Projetos</a>
+                    <a href="sobre.html" class="active" data-i18n="nav.sobre">Sobre Mim</a>
+                </nav>
+                <div class="language-selector header-language-selector">
+                    <select id="language-select">
+                        <option value="pt">PT-BR</option>
+                        <option value="en">Eng</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="bio" class="about-section">
+                <h1 class="section-title reveal" data-i18n="about.title">Sobre Mim</h1>
+
+                <div class="about-layout reveal">
+                    <!-- Photo Side -->
+                    <div class="about-photo-side">
+                        <div class="profile-image-large">
+                            <svg viewBox="0 0 24 24" style="width: 90px; height: 90px; fill: #555;">
+                                <path
+                                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                            </svg>
+                        </div>
+
+                        <div class="cv-download-area">
+                            <a href="CV%20Lucas%20Carvalho%20de%20Oliveira%20(February).pdf" target="_blank" rel="noopener noreferrer"
+                                class="cv-button">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                                </svg>
+                                CV (EN)
+                            </a>
+                            <a href="Curriculum%20Lucas%20Carvalho%20de%20Oliveira%20(Fevereiro).pdf" target="_blank" rel="noopener noreferrer"
+                                class="cv-button">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                                </svg>
+                                CV (PT)
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Text Side -->
+                    <div class="about-text-content">
+                        <p data-i18n="about.p1">
+                            Profissional focado em Análise de Dados com uma sólida base técnica em desenvolvimento de
+                            software. Proficiente em SQL para modelagem, gerenciamento e consulta de bancos de dados
+                            PostgreSQL, e habilitado na criação de dashboards e relatórios em Power BI.
+                        </p>
+                        <p data-i18n="about.p2">
+                            Minha experiência prévia com Node.js e React.js me proporciona uma forte capacidade de
+                            resolução de problemas e agilidade no aprendizado de novas ferramentas, como Python e suas
+                            bibliotecas de análise. Busco uma posição desafiadora onde possa aplicar minha capacidade
+                            analítica para transformar dados em insights acionáveis e suportar a tomada de decisão
+                            estratégica.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Values / Differentials -->
+            <section class="values-section">
+                <h2 class="section-title reveal" data-i18n="about.values">Diferenciais</h2>
+                <div class="values-grid stagger-children">
+                    <div class="value-card reveal">
+                        <span class="value-icon">📊</span>
+                        <h3 data-i18n="about.val1.title">Pensamento Analítico</h3>
+                        <p data-i18n="about.val1.desc">Transformo dados complexos em insights claros e acionáveis.</p>
+                    </div>
+                    <div class="value-card reveal">
+                        <span class="value-icon">🧩</span>
+                        <h3 data-i18n="about.val2.title">Resolução de Problemas</h3>
+                        <p data-i18n="about.val2.desc">Capacidade de diagnosticar e resolver desafios técnicos de forma eficiente.</p>
+                    </div>
+                    <div class="value-card reveal">
+                        <span class="value-icon">💻</span>
+                        <h3 data-i18n="about.val3.title">Código Limpo</h3>
+                        <p data-i18n="about.val3.desc">Foco em código maintível, documentado e bem estruturado.</p>
+                    </div>
+                    <div class="value-card reveal">
+                        <span class="value-icon">🚀</span>
+                        <h3 data-i18n="about.val4.title">Aprendizado Contínuo</h3>
+                        <p data-i18n="about.val4.desc">Sempre buscando novas tecnologias e melhores práticas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section id="formacao-detalhada">
+                <h2 class="section-title reveal" data-i18n="education.title">Formação</h2>
+                <div class="formation-cards reveal">
+                    <div class="formation-card">
+                        <h3 data-i18n="education.course">Análise e Desenvolvimento de Sistemas</h3>
+                        <div class="formation-institution">Newton Paiva Wyden</div>
+                        <div class="formation-date" data-i18n="education.date">Janeiro 2023 - Fevereiro 2026</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Languages -->
+            <section class="languages-section" style="background: transparent;">
+                <h2 class="section-title reveal" data-i18n="languages.title">Idiomas</h2>
+                <div class="languages-grid reveal">
+                    <div class="language-card">
+                        <h3 data-i18n="lang.pt">Português</h3>
+                        <div class="level" data-i18n="lang.native">Nativo</div>
+                    </div>
+                    <div class="language-card">
+                        <h3 data-i18n="lang.en">Inglês</h3>
+                        <div class="level">C2 - Proficient</div>
+                        <p class="lang-detail" data-i18n="lang.en.desc">Imersão diária (documentação, mídia, comunicação)</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p data-i18n="footer.copyright">&copy; <span id="current-year">2026</span> Lucas Oliveira. Todos os direitos
+                reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.9.1/i18next.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

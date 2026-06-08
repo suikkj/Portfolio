@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalhes do projeto Monstros e Máquinas - Lucas Oliveira">
+    <title>Projeto: Monstros e Máquinas - Lucas Oliveira</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <!-- <link rel="stylesheet" href="monstros.css"> -->
+</head>
+
+<body class="project-detail-page">
+    <header>
+        <div class="container">
+            <a href="../index.html" class="logo">[Lucas Oliveira]</a>
+
+            <button class="hamburger-button" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <div class="navigation-wrapper">
+                <nav class="main-nav">
+                    <a href="../index.html" data-i18n="nav.inicio">Início</a>
+                    <a href="../projetos.html" data-i18n="nav.projetos">Projetos</a>
+                    <a href="../sobre.html" data-i18n="nav.sobre">Sobre Mim</a>
+                </nav>
+                <div class="language-selector header-language-selector">
+                    <select id="language-select">
+                        <option value="pt">PT-BR</option>
+                        <option value="en">Eng</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <header class="project-header reveal">
+                <h1>Monstros e Máquinas</h1>
+                <p class="subtitle">Modificação para Minecraft com novas mecânicas e itens 3D.</p>
+            </header>
+
+            <section class="project-description reveal">
+                <h2>Sobre o Projeto</h2>
+                <p>
+                    "Monstros e Máquinas" é um projeto de modding para Minecraft que visa enriquecer a experiência de
+                    jogo através da adição de novos itens, armaduras com modelos 3D personalizados e mecânicas de
+                    gameplay inovadoras.
+                </p>
+                <p>
+                    O desenvolvimento envolve o uso da linguagem Java com a API NeoForge (versão 1.21.1), integrando
+                    bibliotecas como GeckoLib para animações e modelos complexos criados no Blockbench. O projeto
+                    demonstra habilidades em programação de jogos, manipulação de assets 3D e lógica de modding.
+                </p>
+
+                <div class="project-links reveal" style="margin-top: 20px;">
+                    <a href="https://github.com/suikkj/MonsterAndMachines" target="_blank"
+                        class="github-link-small">GitHub Repo</a>
+                </div>
+            </section>
+
+            <!-- 
+            <section class="gallery-section reveal">
+                <h2>Galeria</h2>
+                <div class="gallery-grid">
+                     Adicione imagens aqui quando disponíveis
+                </div>
+            </section>
+            -->
+
+            <section class="project-tech-stack reveal">
+                <h2>Tecnologias Utilizadas</h2>
+                <ul>
+                    <li><strong>Linguagem:</strong> Java</li>
+                    <li><strong>API/Framework:</strong> NeoForge 1.21.1</li>
+                    <li><strong>Modelagem 3D:</strong> Blockbench</li>
+                    <li><strong>Bibliotecas:</strong> GeckoLib, KubeJS</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; <span id="current-year">2026</span> Lucas Oliveira. Todos os direitos
+                reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.9.1/i18next.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

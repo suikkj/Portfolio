@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projetos desenvolvidos por Lucas Oliveira - Desenvolvedor Fullstack">
+    <title>Meus Projetos - Lucas Oliveira</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="projects-page">
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">[Lucas Oliveira]</a>
+
+            <button class="hamburger-button" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <div class="navigation-wrapper">
+                <nav class="main-nav">
+                    <a href="index.html" data-i18n="nav.inicio">Início</a>
+                    <a href="projetos.html" class="active" data-i18n="nav.projetos">Projetos</a>
+                    <a href="sobre.html" data-i18n="nav.sobre">Sobre Mim</a>
+                </nav>
+                <div class="language-selector header-language-selector">
+                    <select id="language-select">
+                        <option value="pt">PT-BR</option>
+                        <option value="en">Eng</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="section-title reveal" data-i18n="projects.page.title">Meus Projetos</h1>
+
+            <!-- Project Filters -->
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter.all">Todos</button>
+                <button class="filter-btn" data-filter="fullstack" data-i18n="filter.fullstack">Fullstack</button>
+                <button class="filter-btn" data-filter="frontend" data-i18n="filter.frontend">Frontend</button>
+                <button class="filter-btn" data-filter="data" data-i18n="filter.data">Data</button>
+                <button class="filter-btn" data-filter="gaming" data-i18n="filter.gaming">Gaming</button>
+            </div>
+
+            <div class="projects-grid stagger-children">
+                
+                <!-- Card 1: Criador de Fichas -->
+                <article class="project-card reveal" data-category="fullstack frontend">
+                    <img src="img/SiteFichas_ARG.png" alt="Criador de Fichas de RPG" class="project-image" loading="lazy">
+                    <h3 data-i18n="project.rpg.title">Plataforma de RPG (Hystoria)</h3>
+                    <p data-i18n="project.rpg.desc">Plataforma para criação e gerenciamento de fichas de RPG.</p>
+                    <div class="card-tech-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>PostgreSQL</span>
+                        <span>Supabase</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="projetos/sitefichas.html" class="btn-primary" data-i18n="btn.details">Ver Detalhes</a>
+                        <a href="https://hystoria-rpg.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-secondary">Live Demo</a>
+                    </div>
+                </article>
+
+                <!-- Card 2: Gerenciador de Estoque (Doce Veneno) -->
+                <article class="project-card reveal" data-category="fullstack data">
+                    <img src="img/SiteEstoque_DV.png" alt="Gerenciador de Estoque" class="project-image" loading="lazy">
+                    <h3 data-i18n="project.stock.title">Gerenciador de Estoque</h3>
+                    <p data-i18n="project.stock.desc">Sistema de controle de estoque para a loja Doce Veneno.</p>
+                    <div class="card-tech-tags">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>PostgreSQL</span>
+                        <span>Supabase</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="projetos/estoqueDV.html" class="btn-primary" data-i18n="btn.details">Ver Detalhes</a>
+                        <a href="https://github.com/suikkj/DemoPlanilhaDoceVeneno" target="_blank" rel="noopener noreferrer"
+                            class="btn-secondary">GitHub</a>
+                    </div>
+                </article>
+
+                <!-- Card 3: ARG - Enigmas -->
+                <article class="project-card reveal" data-category="frontend">
+                    <img src="img/Site-ARG.png" alt="Site de Enigmas (ARG)" class="project-image" loading="lazy">
+                    <h3 data-i18n="project.arg.title">ARG - Enigmas</h3>
+                    <p data-i18n="project.arg.desc">Site interativo de enigmas e quebra-cabeças.</p>
+                    <div class="card-tech-tags">
+                        <span>JavaScript</span>
+                        <span>HTML/CSS</span>
+                        <span>UI/UX</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="projetos/sitearg.html" class="btn-primary" data-i18n="btn.details">Ver Detalhes</a>
+                        <a href="https://github.com/suikkj/SiteARG" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub</a>
+                    </div>
+                </article>
+
+                <!-- Card 4: EcoMente -->
+                <article class="project-card reveal" data-category="frontend">
+                    <img src="img/EcoMente.png" alt="EcoMente" class="project-image" loading="lazy">
+                    <h3>EcoMente</h3>
+                    <p>Plataforma educacional focada em sustentabilidade.</p>
+                    <div class="card-tech-tags">
+                        <span>JavaScript</span>
+                        <span>HTML/CSS</span>
+                        <span>Responsive Design</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="projetos/ecomente.html" class="btn-primary" data-i18n="btn.details">Ver Detalhes</a>
+                        <a href="https://github.com/suikkj/EcoMente" target="_blank" rel="noopener noreferrer"
+                            class="btn-secondary">GitHub</a>
+                    </div>
+                </article>
+
+                <!-- Card 5: Xodarap -->
+                <article class="project-card reveal" data-category="frontend">
+                    <img src="img/SiteXodarap.png" alt="Xodarap" class="project-image" loading="lazy">
+                    <h3>Xodarap</h3>
+                    <p>Site institucional para empresa de tecnologia.</p>
+                    <div class="card-tech-tags">
+                        <span>JavaScript</span>
+                        <span>HTML/CSS</span>
+                        <span>UI/UX</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="projetos/sitexodarap.html" class="btn-primary" data-i18n="btn.details">Ver Detalhes</a>
+                        <a href="https://github.com/suikkj/XodarapSite" target="_blank" rel="noopener noreferrer"
+                            class="btn-secondary">GitHub</a>
+                    </div>
+                </article>
+
+                <!-- Card 6: Monstros e Máquinas (Minecraft Mod) -->
+                <article class="project-card reveal" data-category="gaming">
+                    <!-- Updated with the generated thumbnail image -->
+                    <img src="img/MonstrosEMaquinas.png" alt="Monstros e Máquinas Mod" class="project-image" loading="lazy">
+                    <h3>Monstros e Máquinas</h3>
+                    <p>Modificação para Minecraft com novas mecânicas e itens.</p>
+                    <div class="card-tech-tags">
+                        <span>Java</span>
+                        <span>NeoForge</span>
+                        <span>Blockbench</span>
+                        <span>GeckoLib</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="projetos/monstrosemaquinas.html" class="btn-primary" data-i18n="btn.details">Ver Detalhes</a>
+                        <a href="https://github.com/suikkj/MonsterAndMachines" target="_blank" rel="noopener noreferrer"
+                            class="btn-secondary">GitHub</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p data-i18n="footer.copyright">&copy; <span id="current-year">2026</span> Lucas Oliveira. Todos os direitos
+                reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.9.1/i18next.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
