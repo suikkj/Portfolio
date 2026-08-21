@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#022c22"/>
+      <stop offset="0.5" stop-color="#065f46"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.7" cy="0.2" r="0.7">
+      <stop offset="0" stop-color="#5eead4" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#5eead4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <rect width="800" height="500" fill="url(#glow)"/>
+  <!-- terminal window -->
+  <g transform="translate(270,90)">
+    <rect x="0" y="0" width="260" height="150" rx="12" fill="#042f2e" stroke="#134e4a" stroke-width="2"/>
+    <circle cx="18" cy="18" r="6" fill="#f87171"/>
+    <circle cx="40" cy="18" r="6" fill="#fbbf24"/>
+    <circle cx="62" cy="18" r="6" fill="#34d399"/>
+    <text x="16" y="64" font-family="monospace" font-size="15" fill="#5eead4">&gt; quest_locked_crafting.js</text>
+    <text x="16" y="92" font-family="monospace" font-size="15" fill="#99f6e4">gating: 40+ items</text>
+    <text x="16" y="120" font-family="monospace" font-size="15" fill="#fbbf24">server: online</text>
+  </g>
+  <text x="400" y="320" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="bold" fill="#fff" text-anchor="middle">Modpack &amp; Servers</text>
+  <text x="400" y="356" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#99f6e4" text-anchor="middle">KubeJS · FTB Quests · NeoForge 1.21.1</text>
+  <g transform="translate(248,392)">
+    <g font-family="Arial" font-size="14">
+      <rect x="0" y="0" width="100" height="32" rx="16" fill="#fff" opacity="0.16"/>
+      <text x="50" y="21" text-anchor="middle" fill="#fff">KubeJS</text>
+      <rect x="112" y="0" width="120" height="32" rx="16" fill="#fff" opacity="0.16"/>
+      <text x="172" y="21" text-anchor="middle" fill="#fff">FTB Quests</text>
+      <rect x="244" y="0" width="116" height="32" rx="16" fill="#fff" opacity="0.16"/>
+      <text x="302" y="21" text-anchor="middle" fill="#fff">JavaScript</text>
+    </g>
+  </g>
+</svg>

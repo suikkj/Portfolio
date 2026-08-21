@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lado criativo de Lucas Oliveira - edição de vídeo, música, arte 3D, texturas, mods de Minecraft e escrita de ficção.">
+    <title>Lado Criativo - Lucas Oliveira</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="creative-page">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow--1"></div>
+    <div class="bg-glow bg-glow--2"></div>
+    <div class="bg-glow bg-glow--3"></div>
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">&lt;<b>lucas</b> /&gt;</a>
+
+            <button class="hamburger-button" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <div class="navigation-wrapper">
+                <nav class="main-nav">
+                    <a href="index.html" data-i18n="nav.inicio">Início</a>
+                    <a href="projetos.html" data-i18n="nav.projetos">Projetos</a>
+                    <a href="criativo.html" class="active" data-i18n="nav.criativo">Criativo</a>
+                    <a href="sobre.html" data-i18n="nav.sobre">Sobre Mim</a>
+                </nav>
+                <div class="language-selector header-language-selector">
+                    <select id="language-select">
+                        <option value="pt">PT-BR</option>
+                        <option value="en">Eng</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" style="padding-top:70px;">
+            <span class="section-kicker" data-i18n="creative.kicker">Além do Código</span>
+            <h1 class="section-title reveal" data-i18n="creative.title">Lado Criativo</h1>
+            <p class="section-lead reveal" data-i18n="creative.lead">Programação é só uma parte do que eu gosto de
+                criar. Edição de vídeo, música, arte, mundo fictício e escrita — aqui está o que eu "coiso" por aí.</p>
+
+            <!-- VIDEOGRAPHY -->
+            <section class="section" style="padding-top:16px;">
+                <span class="section-kicker reveal" data-i18n="creative.av.k">Audiovisual</span>
+                <h2 class="section-title reveal" data-i18n="creative.av.title">Edição de Vídeo</h2>
+                <p class="section-lead reveal" data-i18n="creative.av.lead">Edições e experimentos visuais montados no
+                    Adobe Premiere Pro — de praticamente edições musicais a cineclipes dentro do Minecraft.</p>
+
+                <div class="projects-grid stagger-children" style="margin-top:12px;">
+
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.video">Vídeo</span>
+                            <img src="img/creative/violetta.jpg" alt="Violetta" loading="lazy">
+                            <div class="cover-overlay"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="vtitle.violetta">Violetta</h3>
+                            <p data-i18n="creative.v.violetta">Cineclipe de ficção gravado dentro do Minecraft, contando
+                                a história de Violetta.</p>
+                            <div class="card-tech-tags"><span>Premiere Pro</span><span>Minecraft</span><span>Narrativa</span></div>
+                            <div class="card-buttons" style="margin-top:16px;">
+                                <a href="https://www.youtube.com/watch?v=nhda4w3kIBU" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-i18n="watch">Assistir no YouTube</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.video">Vídeo</span>
+                            <img src="img/creative/demo.jpg" alt="Demonstração" loading="lazy">
+                            <div class="cover-overlay"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="vtitle.demo">Demonstração - Monstros e Máquinas</h3>
+                            <p data-i18n="v.demo.desc">Trailer e demonstração do mod Monstros e Máquinas para Minecraft.</p>
+                            <div class="card-tech-tags"><span>Premiere Pro</span><span>Minecraft</span></div>
+                            <div class="card-buttons" style="margin-top:16px;">
+                                <a href="https://www.youtube.com/watch?v=-bu5xKsUW4U" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-i18n="watch">Assistir no YouTube</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.video">Vídeo</span>
+                            <img src="img/creative/canfix.jpg" alt="I can fix you" loading="lazy">
+                            <div class="cover-overlay"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="vtitle.canfix">Eu posso consertar você, Roselynne</h3>
+                            <p data-i18n="creative.v.canfix">Edição de ritmo e emoção com estética de mangá e legendas
+                                dramatizadas.</p>
+                            <div class="card-tech-tags"><span>Premiere Pro</span><span>Motion</span><span>Edição</span></div>
+                            <div class="card-buttons" style="margin-top:16px;">
+                                <a href="https://www.youtube.com/shorts/9bxF0yT6bGo" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-i18n="watch">Assistir no YouTube</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.video">Vídeo</span>
+                            <img src="img/creative/loverman.jpg" alt="Dreamgarden" loading="lazy">
+                            <div class="cover-overlay"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="vtitle.loverman">Dreamgarden - Edit</h3>
+                            <p data-i18n="creative.v.loverman">Edição musical sincronizada ao ritmo, com cortes e
+                                transições marcados na batida.</p>
+                            <div class="card-tech-tags"><span>Premiere Pro</span><span>Beat Sync</span></div>
+                            <div class="card-buttons" style="margin-top:16px;">
+                                <a href="https://www.youtube.com/watch?v=Jv-zVwXwFJg" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-i18n="watch">Assistir no YouTube</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.video">Vídeo</span>
+                            <img src="img/creative/lies.jpg" alt="Lies" loading="lazy">
+                            <div class="cover-overlay"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="vtitle.lies">Que piada cósmica você é, Arquivista</h3>
+                            <p data-i18n="creative.v.lies">Edição de clima e narrativa, brincando com cor e corte.</p>
+                            <div class="card-tech-tags"><span>Premiere Pro</span><span>Color</span></div>
+                            <div class="card-buttons" style="margin-top:16px;">
+                                <a href="https://www.youtube.com/shorts/ay24xWhXtgM" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-i18n="watch">Assistir no YouTube</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.video">Vídeo</span>
+                            <img src="img/creative/carlito.jpg" alt="Carlito" loading="lazy">
+                            <div class="cover-overlay"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="vtitle.carlito">Obrigado pelo esforço, Carlito</h3>
+                            <p data-i18n="creative.v.carlito">Homenagem editada com carinho e sentido de humor.</p>
+                            <div class="card-tech-tags"><span>Premiere Pro</span><span>Edição</span></div>
+                            <div class="card-buttons" style="margin-top:16px;">
+                                <a href="https://www.youtube.com/watch?v=nQKJHNrerks" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-i18n="watch">Assistir no YouTube</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- MUSIC & AUDIO -->
+            <section class="section" style="padding-top:16px;">
+                <span class="section-kicker reveal" data-i18n="creative.music.k">Áudio</span>
+                <h2 class="section-title reveal" data-i18n="creative.music.title">Música &amp; Sound Design</h2>
+                <p class="section-lead reveal" data-i18n="creative.music.lead">Gravações, covers e efeitos sonoros —
+                    explorando som como mais uma forma de contar história.</p>
+
+                <div class="projects-grid stagger-children" style="margin-top:12px;">
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.audio">Áudio</span>
+                            <div class="ctile g-music"><span class="ct-emoji">🎙️</span></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="creative.music.covers">Gravações &amp; Covers</h3>
+                            <p data-i18n="creative.music.covers.desc">Gravações vocais e de instrumentos em
+                                estúdio, com edição e mixagem.</p>
+                            <div class="card-tech-tags"><span>Gravação</span><span>Mixagem</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.audio">Áudio</span>
+                            <div class="ctile g-music"><span class="ct-emoji">🎲</span></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="creative.music.sfx">Sound Design</h3>
+                            <p data-i18n="creative.music.sfx.desc">Design de efeitos sonoros (como dados rolando) para
+                                uso em jogos e projetos.</p>
+                            <div class="card-tech-tags"><span>SFX</span><span>Audacity</span></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ART & 3D -->
+            <section class="section" style="padding-top:16px;">
+                <span class="section-kicker reveal" data-i18n="creative.art.k">Arte</span>
+                <h2 class="section-title reveal" data-i18n="creative.art.title">Arte, Textura &amp; 3D</h2>
+                <p class="section-lead reveal" data-i18n="creative.art.lead">Ilustração, pintura digital, logos, texturas
+                    e modelagem 3D — incluindo as artes do universo "Monstros e Máquinas".</p>
+
+                <div class="projects-grid stagger-children" style="margin-top:12px;">
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.art">Arte</span>
+                            <div class="ctile g-art"><span class="ct-emoji">🖌️</span></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="creative.art.logos">Logos &amp; Identidade</h3>
+                            <p data-i18n="creative.art.logos.desc">Criação de logos e identidade visual para os meus
+                                projetos e comunidades.</p>
+                            <div class="card-tech-tags"><span>Photoshop</span><span>Design</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.art">Arte</span>
+                            <div class="ctile g-art"><span class="ct-emoji">🧊</span></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="creative.art.models">Modelagem 3D (Blockbench)</h3>
+                            <p data-i18n="creative.art.models.desc">Modelos 3D animáveis — criaturas e itens do mod
+                                Monstros e Máquinas.</p>
+                            <div class="card-tech-tags"><span>Blockbench</span><span>GeckoLib</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.art">Arte</span>
+                            <div class="ctile g-art"><span class="ct-emoji">🎨</span></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="creative.art.painting">Pintura Digital</h3>
+                            <p data-i18n="creative.art.painting.desc">Artes e ilustrações digitais autorais (ex. "Ruindade
+                                Pura"), feitas no Photoshop.</p>
+                            <div class="card-tech-tags"><span>Photoshop</span><span>Ilustração</span></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- MINECRAFT/EXPERIMENTAL -->
+            <section class="section" style="padding-top:16px;">
+                <span class="section-kicker reveal" data-i18n="creative.mc.k">Mundo</span>
+                <h2 class="section-title reveal" data-i18n="creative.mc.title">Minecraft &amp; Experiências</h2>
+                <p class="section-lead reveal" data-i18n="creative.mc.lead">Modpacks temáticos e packs de textura que
+                    transformam o jogo em uma experiência própria.</p>
+
+                <div class="projects-grid stagger-children" style="margin-top:12px;">
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.game">Game</span>
+                            <div class="ctile g-mc"><span class="ct-emoji">🌫️</span></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="creative.mc.liminal">Liminal Heinrich</h3>
+                            <p data-i18n="creative.mc.liminal.desc">Modpack de experiência "liminal" — ambientes vazios e
+                                inquietantes com atmosfera própria.</p>
+                            <div class="card-tech-tags"><span>Modpack</span><span>Atmosfera</span><span>CurseForge</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.game">Game</span>
+                            <div class="ctile g-mc"><span class="ct-emoji">🧱</span></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="creative.mc.textures">Packs de Textura</h3>
+                            <p data-i18n="creative.mc.textures.desc">Texturas e tilesets que fazem parte da direção de
+                                arte dos meus mundos.</p>
+                            <div class="card-tech-tags"><span>Texturização</span><span>Pixel Art</span></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- WRITING -->
+            <section class="section" style="padding-top:16px;">
+                <span class="section-kicker reveal" data-i18n="creative.write.k">Escrita</span>
+                <h2 class="section-title reveal" data-i18n="creative.write.title">Escrita Ficcional</h2>
+                <p class="section-lead reveal" data-i18n="creative.write.lead">Textos que compõem a história do meu
+                    universo — o pós-apocalíptico de "Monstros e Máquinas", o vírus "Vazio", a organização T.U.R. e os
+                    seus personagens. Cada peça tem sinopse em português e inglês.</p>
+
+                <div class="writing-grid stagger-children" style="margin-top:12px;">
+
+                    <article class="writing-card reveal">
+                        <span class="writing-num">01</span>
+                        <div class="writing-body">
+                            <h3 data-i18n="write.tomas.title">A Escolha de Thomas</h3>
+                            <div class="w-meta" data-i18n="write.tomas.meta">Conto · Refúgios · ~760 palavras</div>
+                            <p data-i18n="write.tomas.desc">No 12º dia fora do Refúgio, alguém precisa ser enviado à
+                                morte — e uma voz se oferece no lugar de Thomas, quebrando a hierarquia de quem ele
+                                achava que seria escolhido.</p>
+                            <a href="leituras/a-escolha-de-thomas.html" class="read-link button" data-i18n="ler">Ler</a>
+                        </div>
+                    </article>
+
+                    <article class="writing-card reveal">
+                        <span class="writing-num">02</span>
+                        <div class="writing-body">
+                            <h3 data-i18n="write.tur.title">(Confidencial) Arquivos da T.U.R.</h3>
+                            <div class="w-meta" data-i18n="write.tur.meta">Dossiê · Worldbuilding · Kali e Rosellyne</div>
+                            <p data-i18n="write.tur.desc">Arquivos classificados da Tactical Unit for Restoration — a
+                                organização que mantém os Refúgios vivos, mas esconde mais do que o governo consegue
+                                controlar.</p>
+                            <a href="leituras/arquivos-da-tur-kali.html" class="read-link button" data-i18n="ler">Ler</a>
+                        </div>
+                    </article>
+
+                    <article class="writing-card reveal">
+                        <span class="writing-num">03</span>
+                        <div class="writing-body">
+                            <h3 data-i18n="write.valid.title">Anotações sobre o VALID-71 (Dra. Carmine)</h3>
+                            <div class="w-meta" data-i18n="write.valid.meta">Registro · Diário científico · Dra. Carmine</div>
+                            <p data-i18n="write.valid.desc">A Dra. Carmine revela a verdade: o "Vazio" não é vírus nem
+                                magia — ele apaga a sua mente aos poucos e, ao terminar de consumir uma pessoa, assume a
+                                consciência dela.</p>
+                            <a href="leituras/anotacoes-valid-71.html" class="read-link button" data-i18n="ler">Ler</a>
+                        </div>
+                    </article>
+
+                    <article class="writing-card reveal">
+                        <span class="writing-num">04</span>
+                        <div class="writing-body">
+                            <h3 data-i18n="write.garden.title">O Jardim da Criação</h3>
+                            <div class="w-meta" data-i18n="write.garden.meta">Conto · Laboratório Jardim da Criação</div>
+                            <p data-i18n="write.garden.desc">Dias no Jardim da Criação: a relação entre a mestra Violetta
+                                e Rosellyne enquanto correm contra as exigências abusivas da T.U.R. para deter o Vazio.</p>
+                            <a href="leituras/lindo-pdf.html" class="read-link button" data-i18n="ler">Ler</a>
+                        </div>
+                    </article>
+
+                    <article class="writing-card reveal">
+                        <span class="writing-num">05</span>
+                        <div class="writing-body">
+                            <h3 data-i18n="write.ignota.title">Memória Ignota</h3>
+                            <div class="w-meta" data-i18n="write.ignota.meta">Experiencial · Segunda pessoa · Limbo</div>
+                            <p data-i18n="write.ignota.desc">Você acorda num limbo, em uma floresta que nunca viu, guiado
+                                por uma respiração e gemidos de dor distantes — uma história em segunda pessoa sobre
+                                memória e medo.</p>
+                            <a href="leituras/memoria-ignota.html" class="read-link button" data-i18n="ler">Ler</a>
+                        </div>
+                    </article>
+
+                    <article class="writing-card reveal">
+                        <span class="writing-num">06</span>
+                        <div class="writing-body">
+                            <h3 data-i18n="write.limiar.title">O Limiar do Impossível</h3>
+                            <div class="w-meta" data-i18n="write.limiar.meta">Conto · Expedição · Flynt, Thomas e Rin</div>
+                            <p data-i18n="write.limiar.desc">Flynt Guinevere lidera a equipe em uma expedição ao que foi
+                                ensinado como sentença de morte — numa subida onde cada segundo ecoa o temor do "Vazio",
+                                que é atraído pelo som.</p>
+                            <a href="leituras/o-limiar-do-impossivel.html" class="read-link button" data-i18n="ler">Ler</a>
+                        </div>
+                    </article>
+
+                    <article class="writing-card reveal">
+                        <span class="writing-num">07</span>
+                        <div class="writing-body">
+                            <h3 data-i18n="write.ultima.title">Uma Última Vez.</h3>
+                            <div class="w-meta" data-i18n="write.ultima.meta">Conto · Assimilação · Violetta</div>
+                            <p data-i18n="write.ultima.desc">Sobre o destino cruel da assimilação: Violetta sente a mente
+                                sendo dominada por algo que não compreende e começa a apagar a própria memória para
+                                resistir.</p>
+                            <a href="leituras/uma-ultima-vez.html" class="read-link button" data-i18n="ler">Ler</a>
+                        </div>
+                    </article>
+
+                    <article class="writing-card reveal">
+                        <span class="writing-num">08</span>
+                        <div class="writing-body">
+                            <h3 data-i18n="write.petala.title">Violetta e sua última pétala.</h3>
+                            <div class="w-meta" data-i18n="write.petala.meta">Conto-longo · Confronto · ~4100 palavras</div>
+                            <p data-i18n="write.petala.desc">O confronto final: "Ele" deixa a sombra e ganha voz, vinhas
+                                surgem do chão para prender Violetta — e a ironia cósmica cobra o seu preço.</p>
+                            <a href="leituras/violetta-e-sua-ultima-petala.html" class="read-link button" data-i18n="ler">Ler</a>
+                        </div>
+                    </article>
+
+                    <article class="writing-card reveal">
+                        <span class="writing-num">09</span>
+                        <div class="writing-body">
+                            <h3 data-i18n="write.corredor.title">O Corredor</h3>
+                            <div class="w-meta" data-i18n="write.corredor.meta">Experiencial · 2ª pessoa · Liminal</div>
+                            <p data-i18n="write.corredor.desc">Em segunda pessoa: você está de novo no mesmo corredor, e os
+                                passos atrás de você nunca deixam de se aproximar.</p>
+                            <a href="leituras/o-corredor.html" class="read-link button" data-i18n="ler">Ler</a>
+                        </div>
+                    </article>
+
+                    <article class="writing-card reveal">
+                        <span class="writing-num">10</span>
+                        <div class="writing-body">
+                            <h3 data-i18n="write.collab.title">Collab com a T.U.R.</h3>
+                            <div class="w-meta" data-i18n="write.collab.meta">Collab · Expedição · Hitsuna Akane</div>
+                            <p data-i18n="write.collab.desc">Hitsuna Akane documenta 45 dias fora do Refúgio numa collab da
+                                T.U.R. — até o Dia 27 deixar de ser apenas um vlog.</p>
+                            <a href="leituras/collab-com-a-tur.html" class="read-link button" data-i18n="ler">Ler</a>
+                        </div>
+                    </article>
+
+                    <article class="writing-card reveal">
+                        <span class="writing-num">11</span>
+                        <div class="writing-body">
+                            <h3 data-i18n="write.diario.title">Diário 1 - Grupo de Expedição</h3>
+                            <div class="w-meta" data-i18n="write.diario.meta">Diário · Expedição · Refúgio Cigarra</div>
+                            <p data-i18n="write.diario.desc">O diário do grupo que saiu do Refúgio Cigarra após 2.740 anos —
+                                os Dias 1, 2 e 4 de exploração de um mundo em ruínas.</p>
+                            <a href="leituras/diario-1-grupo-de-expedicao.html" class="read-link button" data-i18n="ler">Ler</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p data-i18n="footer.copyright">&copy; <span id="current-year">2026</span> Lucas Oliveira. Todos os direitos
+                reservados.</p>
+            <div class="footer-links">
+                <a href="index.html" data-i18n="nav.inicio">Início</a>
+                <a href="projetos.html" data-i18n="nav.projetos">Projetos</a>
+                <a href="sobre.html" data-i18n="nav.sobre">Sobre</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.9.1/i18next.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

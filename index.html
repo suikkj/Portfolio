@@ -5,17 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfólio de Lucas Oliveira - Desenvolvedor Fullstack e Analista de Dados. Especialista em React, Node.js, Power BI e bancos de dados SQL/NoSQL.">
+        content="Portfólio de Lucas Oliveira - Desenvolvedor Fullstack, Analista de Dados e Desenvolvedor de Mods/Gameplay. React, Node.js, Spring Boot, React Native, SQL e análise de dados.">
     <meta name="keywords"
-        content="desenvolvedor fullstack, data analyst, react, node.js, power bi, portfolio, lucas oliveira">
+        content="desenvolvedor fullstack, data analyst, react, node.js, spring boot, react native, power bi, mods minecraft, github, portfolio, lucas oliveira">
     <meta name="author" content="Lucas Oliveira">
     <meta property="og:title" content="Lucas Oliveira - Fullstack Developer & Data Analyst">
     <meta property="og:description"
-        content="Confira meus projetos e experiência em desenvolvimento web e análise de dados.">
-    <meta property="og:image" content="img/preview-portfolio.png">
+        content="Confira meus projetos em desenvolvimento web, mobile, análise de dados e modding.">
     <meta property="og:type" content="website">
 
-    <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -28,46 +26,44 @@
             "https://www.linkedin.com/in/lucasoliveiradevfullstack/",
             "https://github.com/suikkj"
         ],
-        "knowsAbout": ["JavaScript", "React", "Node.js", "PostgreSQL", "Power BI", "Data Analysis", "Python", "SQL"]
+        "knowsAbout": ["JavaScript", "TypeScript", "React", "React Native", "Node.js", "Spring Boot", "Kotlin", "Rust", "PostgreSQL", "Supabase", "Power BI", "Python", "SQL", "Minecraft modding", "KubeJS"]
     }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-    <title>Lucas Oliveira - Fullstack & Data Analyst</title>
+    <title>Lucas Oliveira - Fullstack Developer, Data & Games</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Scroll Progress Bar -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow--1"></div>
+    <div class="bg-glow bg-glow--2"></div>
+    <div class="bg-glow bg-glow--3"></div>
     <div class="scroll-progress" id="scroll-progress"></div>
-
-    <!-- Particle Canvas Background -->
-    <canvas id="particle-canvas"></canvas>
-
-    <!-- Cursor Glow -->
-    <div class="cursor-glow" id="cursor-glow"></div>
 
     <header>
         <div class="container">
-            <a href="index.html" class="logo">[Lucas Oliveira]</a>
+            <a href="index.html" class="logo">&lt;<b>lucas</b> /&gt;</a>
 
-            <!-- Hamburger Button -->
             <button class="hamburger-button" aria-label="Abrir menu" aria-expanded="false">
                 <span class="hamburger-bar"></span>
                 <span class="hamburger-bar"></span>
                 <span class="hamburger-bar"></span>
             </button>
 
-            <!-- Navigation Wrapper -->
             <div class="navigation-wrapper">
                 <nav class="main-nav">
                     <a href="index.html" class="active" data-i18n="nav.inicio">Início</a>
                     <a href="projetos.html" data-i18n="nav.projetos">Projetos</a>
+                    <a href="criativo.html" data-i18n="nav.criativo">Criativo</a>
+
                     <a href="sobre.html" data-i18n="nav.sobre">Sobre Mim</a>
                 </nav>
                 <div class="language-selector header-language-selector">
@@ -81,48 +77,41 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="apresentacao" class="hero">
+        <!-- HERO -->
+        <section class="hero">
             <div class="hero-content container reveal">
                 <div class="availability-badge" data-i18n="hero.badge">
                     <span class="availability-dot"></span>
                     Disponível para oportunidades
                 </div>
 
-                <div class="hero-text-line">
-                    <h1 data-i18n="hero.title">Olá, eu sou Lucas Oliveira!</h1>
-                    <span class="typing-cursor"></span>
-                </div>
-                <div class="hero-text-line">
-                    <p data-i18n="hero.subtitle">Desenvolvedor Fullstack e Analista de Dados focado em transformar dados
-                        complexos em soluções digitais intuitivas.</p>
-                </div>
+                <h1 data-i18n="hero.title">Olá, eu sou <span class="grad">Lucas Oliveira</span>!</h1>
+                <div class="hero-role" data-i18n="hero.role">Fullstack Developer · Data Analyst · Game Dev</div>
+                <p class="hero-sub" data-i18n="hero.subtitle">Transformo dados e ideias em produtos digitais — de
+                    dashboards e APIs a apps mobile e mods de jogos.</p>
 
                 <div class="hero-buttons">
                     <a href="#contato" class="cta-button" data-i18n="hero.contact">Entre em Contato</a>
-                    <a href="#projetos" class="button" data-i18n="hero.projects">Ver Projetos</a>
+                    <a href="#destaques" class="button" data-i18n="hero.projects">Ver Projetos</a>
                 </div>
 
                 <div class="cv-download-area">
-                    <a href="CV%20Lucas%20Carvalho%20de%20Oliveira%20(February).pdf" target="_blank" rel="noopener noreferrer" class="cv-button">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
-                        </svg>
+                    <a href="CV%20Lucas%20Carvalho%20de%20Oliveira%20(February).pdf" target="_blank" rel="noopener noreferrer"
+                        class="cv-button">
+                        <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" /></svg>
                         Download CV (EN)
                     </a>
                     <a href="Curriculum%20Lucas%20Carvalho%20de%20Oliveira%20(Fevereiro).pdf" target="_blank" rel="noopener noreferrer"
                         class="cv-button">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
-                        </svg>
+                        <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" /></svg>
                         Baixar Currículo (PT)
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Stats Section -->
-        <section class="stats-section">
+        <!-- STATS -->
+        <section class="section">
             <div class="container">
                 <div class="stats-grid reveal">
                     <div class="stat-card">
@@ -130,31 +119,34 @@
                         <div class="stat-label" data-i18n="stats.years">Anos de Experiência</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number" data-count="6">0</div>
+                        <div class="stat-number" data-count="12">0</div>
                         <div class="stat-label" data-i18n="stats.projects">Projetos Entregues</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number" data-count="12">0</div>
+                        <div class="stat-number" data-count="15">0</div>
                         <div class="stat-label" data-i18n="stats.techs">Tecnologias Dominadas</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="linguagens" class="skills-section">
+        <!-- SKILLS -->
+        <section id="linguagens" class="section">
             <div class="container">
-                <h2 class="section-title reveal" data-i18n="skills.title">Minhas Ferramentas e Tecnologias</h2>
-                <div class="skills-grid stagger-children">
+                <span class="section-kicker" data-i18n="skills.kicker">Stack</span>
+                <h2 class="section-title reveal" data-i18n="skills.title">Ferramentas e Tecnologias</h2>
+                <div class="skills-grid stagger-children" style="margin-top:12px;">
 
                     <div class="skill-category reveal">
                         <h3 data-i18n="skills.frontend">Frontend & Mobile</h3>
                         <div class="tech-icons-container">
                             <div class="tech-icon-cube" title="React"><i class="devicon-react-original colored"></i></div>
-                            <div class="tech-icon-cube" title="JavaScript"><i class="devicon-javascript-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="React Native"><i class="devicon-react-original colored"></i></div>
                             <div class="tech-icon-cube" title="TypeScript"><i class="devicon-typescript-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="JavaScript"><i class="devicon-javascript-plain colored"></i></div>
                             <div class="tech-icon-cube" title="HTML5"><i class="devicon-html5-plain colored"></i></div>
                             <div class="tech-icon-cube" title="CSS3"><i class="devicon-css3-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="Vite"><i class="devicon-vitejs-plain colored"></i></div>
                         </div>
                     </div>
 
@@ -163,33 +155,32 @@
                         <div class="tech-icons-container">
                             <div class="tech-icon-cube" title="Node.js"><i class="devicon-nodejs-plain colored"></i></div>
                             <div class="tech-icon-cube" title="Express"><i class="devicon-express-original colored"></i></div>
+                            <div class="tech-icon-cube" title="Java / Spring"><i class="devicon-java-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="Kotlin"><i class="devicon-kotlin-plain colored"></i></div>
                             <div class="tech-icon-cube" title="Python"><i class="devicon-python-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="Rust"><i class="devicon-rust-plain colored"></i></div>
                             <div class="tech-icon-cube" title="PostgreSQL"><i class="devicon-postgresql-plain colored"></i></div>
                             <div class="tech-icon-cube" title="MongoDB"><i class="devicon-mongodb-plain colored"></i></div>
                             <div class="tech-icon-cube" title="Supabase">
-                                <svg class="powerbi-icon" viewBox="0 0 24 24" style="fill: #3ECF8E;">
-                                    <path d="M21.362 9.354H12V.396a.396.396 0 0 0-.745-.186L2.4 14.985a.794.794 0 0 0 .669 1.218H12v8.961a.396.396 0 0 0 .745.186l8.855-14.775a.794.794 0 0 0-.669-1.218z"/>
-                                </svg>
+                                <svg viewBox="0 0 24 24" style="fill:#3ECF8E;"><path d="M21.362 9.354H12V.396a.396.396 0 0 0-.745-.186L2.4 14.985a.794.794 0 0 0 .669 1.218H12v8.961a.396.396 0 0 0 .745.186l8.855-14.775a.794.794 0 0 0-.669-1.218z"/></svg>
                             </div>
                         </div>
                     </div>
 
                     <div class="skill-category reveal">
-                        <h3 data-i18n="skills.data">Data & Tools</h3>
+                        <h3 data-i18n="skills.data">Dados, DevOps & Games</h3>
                         <div class="tech-icons-container">
                             <div class="tech-icon-cube" title="Power BI">
-                                <svg class="powerbi-icon" viewBox="0 0 24 24">
-                                    <path d="M10.013 3.109c0-.61.495-1.109 1.109-1.109h1.764c.612 0 1.109.497 1.109 1.109V20.89c0 .612-.495 1.109-1.109 1.109h-1.764a1.112 1.112 0 0 1-1.109-1.109V3.109zM5 9.109C5 8.499 5.495 8 6.109 8h1.764c.612 0 1.109.497 1.109 1.109V20.89c0 .612-.495 1.109-1.109 1.109H6.109A1.112 1.112 0 0 1 5 20.891V9.109zM15.022 6.109c0-.61.495-1.109 1.109-1.109h1.764c.612 0 1.109.497 1.109 1.109V20.89c0 .612-.495 1.109-1.109 1.109h-1.764a1.112 1.112 0 0 1-1.109-1.109V6.109z"/>
-                                </svg>
+                                <svg class="powerbi-icon" viewBox="0 0 24 24"><path d="M10.013 3.109c0-.61.495-1.109 1.109-1.109h1.764c.612 0 1.109.497 1.109 1.109V20.89c0 .612-.495 1.109-1.109 1.109h-1.764a1.112 1.112 0 0 1-1.109-1.109V3.109zM5 9.109C5 8.499 5.495 8 6.109 8h1.764c.612 0 1.109.497 1.109 1.109V20.89c0 .612-.495 1.109-1.109 1.109H6.109A1.112 1.112 0 0 1 5 20.891V9.109zM15.022 6.109c0-.61.495-1.109 1.109-1.109h1.764c.612 0 1.109.497 1.109 1.109V20.89c0 .612-.495 1.109-1.109 1.109h-1.764a1.112 1.112 0 0 1-1.109-1.109V6.109z"/></svg>
                             </div>
                             <div class="tech-icon-cube" title="Excel">
-                                <svg class="excel-icon" viewBox="0 0 24 24">
-                                    <path d="M23 1.5q.41 0 .7.3.3.29.3.7v19q0 .41-.3.7-.29.3-.7.3H7q-.41 0-.7-.3-.3-.29-.3-.7V18H1q-.41 0-.7-.3-.3-.29-.3-.7V7q0-.41.3-.7Q.58 6 1 6h5V2.5q0-.41.3-.7.29-.3.7-.3zM6 13.28l1.42 2.66h2.14l-2.38-3.87 2.34-3.8H7.46l-1.3 2.4-.05.08-.04.09-.64-1.28-.66-1.29H2.59l2.27 3.82-2.48 3.85h2.16zM14.25 21v-3H7.5v3zm0-4.5v-3.75H12v3.75zm0-5.25V7.5H12v3.75zm0-5.25V3H7.5v3zm7.25 15v-3h-5.75v3zm0-4.5v-3.75h-5.75v3.75zm0-5.25V7.5h-5.75v3.75zm0-5.25V3h-5.75v3z"/>
-                                </svg>
+                                <svg class="excel-icon" viewBox="0 0 24 24"><path d="M23 1.5q.41 0 .7.3.3.29.3.7v19q0 .41-.3.7-.29.3-.7.3H7q-.41 0-.7-.3-.3-.29-.3-.7V18H1q-.41 0-.7-.3-.3-.29-.3-.7V7q0-.41.3-.7Q.58 6 1 6h5V2.5q0-.41.3-.7.29-.3.7-.3zM6 13.28l1.42 2.66h2.14l-2.38-3.87 2.34-3.8H7.46l-1.3 2.4-.05.08-.04.09-.64-1.28-.66-1.29H2.59l2.27 3.82-2.48 3.85h2.16zM14.25 21v-3H7.5v3zm0-4.5v-3.75H12v3.75zm0-5.25V7.5H12v3.75zm0-5.25V3H7.5v3zm7.25 15v-3h-5.75v3zm0-4.5v-3.75h-5.75v3.75zm0-5.25V7.5h-5.75v3.75zm0-5.25V3h-5.75v3z"/></svg>
                             </div>
                             <div class="tech-icon-cube" title="Git"><i class="devicon-git-plain colored"></i></div>
                             <div class="tech-icon-cube" title="GitHub"><i class="devicon-github-original colored"></i></div>
-                            <div class="tech-icon-cube" title="SQL"><i class="devicon-mysql-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="Docker"><i class="devicon-docker-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="KubeJS"><i class="devicon-javascript-plain colored"></i></div>
+                            <div class="tech-icon-cube" title="Firebase"><i class="devicon-firebase-plain colored"></i></div>
                         </div>
                     </div>
 
@@ -197,30 +188,103 @@
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experiencia" class="experience-section">
+        <!-- FEATURED PROJECTS -->
+        <section id="destaques" class="section">
             <div class="container">
-                <h2 class="section-title reveal" data-i18n="experience.title">Experiência Profissional</h2>
-                <div class="timeline reveal">
+                <span class="section-kicker" data-i18n="projects.kicker">Portfólio</span>
+                <h2 class="section-title reveal" data-i18n="projects.feat">Projetos em Destaque</h2>
+                <div class="projects-grid stagger-children" style="margin-top:12px;">
+
+                    <!-- EscolarBH (flagship) -->
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.fullstack">Fullstack</span>
+                            <img src="img/escolarbh.svg" alt="EscolarBH" loading="lazy">
+                            <div class="cover-overlay"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3>EscolarBH</h3>
+                            <p data-i18n="project.escolarbh.desc">Plataforma de transporte escolar com web, API, app
+                                mobile e serviço de geolocalização.</p>
+                            <div class="card-tech-tags">
+                                <span>React</span><span>TypeScript</span><span>Spring Boot</span><span>Kotlin</span><span>React Native</span><span>Rust</span>
+                            </div>
+                            <div class="card-buttons">
+                                <a href="projetos/escolarbh.html" class="btn-primary" data-i18n="btn.details">Ver Detalhes</a>
+                                <a href="https://github.com/suikkj/EscolarBH" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Doce Veneno / Estoque -->
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.fullstack">Fullstack</span>
+                            <img src="img/SiteEstoque_DV.png" alt="Gerenciador de Estoque" loading="lazy">
+                            <div class="cover-overlay"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="project.stock.title">Sistema Doce Veneno</h3>
+                            <p data-i18n="project.stock.desc">Gestão completa de estoque, financeiro e sorteios para uma
+                                loja de moda real.</p>
+                            <div class="card-tech-tags">
+                                <span>Node.js</span><span>Express</span><span>React</span><span>PostgreSQL</span><span>Supabase</span>
+                            </div>
+                            <div class="card-buttons">
+                                <a href="projetos/doceveneno.html" class="btn-primary" data-i18n="btn.details">Ver Detalhes</a>
+                                <a href="https://github.com/suikkj/PlanilhaDoceVenenoModa" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- RPG Hystoria -->
+                    <article class="project-card reveal">
+                        <div class="project-cover">
+                            <span class="project-category" data-i18n="cat.fullstack">Fullstack</span>
+                            <img src="img/SiteFichas_ARG.png" alt="Plataforma RPG" loading="lazy">
+                            <div class="cover-overlay"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="project.rpg.title">Hystoria RPG</h3>
+                            <p data-i18n="project.rpg.desc">Plataforma de fichas e campanhas de RPG Tormenta20.</p>
+                            <div class="card-tech-tags">
+                                <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Supabase</span>
+                            </div>
+                            <div class="card-buttons">
+                                <a href="projetos/sitefichas.html" class="btn-primary" data-i18n="btn.details">Ver Detalhes</a>
+                                <a href="https://hystoria-rpg.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-secondary">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div style="text-align:center; margin-top:48px;" class="reveal">
+                    <a href="projetos.html" class="button" data-i18n="btn.viewAll">Ver Todos os Projetos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experiencia" class="section">
+            <div class="container">
+                <span class="section-kicker" data-i18n="experience.kicker">Trajetória</span>
+                <h2 class="section-title reveal" data-i18n="experience.title">Experiência</h2>
+                <div class="timeline reveal" style="margin-top:26px;">
 
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-date" data-i18n="exp.doceveneno.date">Atual</span>
                             <h3 class="timeline-title">Doce Veneno Moda Feminina</h3>
-                            <div class="timeline-role" data-i18n="exp.doceveneno.role">Desenvolvedor Fullstack,
-                                Administrador e Analista de Dados</div>
+                            <div class="timeline-role" data-i18n="exp.doceveneno.role">Fullstack Developer, Administrator
+                                & Data Analyst</div>
                             <p class="timeline-description" data-i18n="exp.doceveneno.desc">
-                                Sistema Fullstack web para gerenciamento de loja de roupas, focado na otimização do
-                                controle de estoque e acompanhamento financeiro. API construída com Node.js e Express.js
-                                e arquitetura de banco de dados PostgreSQL (Supabase).
+                                Sistema Fullstack para uma loja real: controle de estoque, financeiro e sorteios.
+                                Node.js, Express, PostgreSQL (Supabase), React e análise de dados em Power BI.
                             </p>
                             <div class="timeline-tech">
-                                <span>Node.js</span>
-                                <span>Express.js</span>
-                                <span>PostgreSQL</span>
-                                <span>Supabase</span>
-                                <span>Data Analysis</span>
+                                <span>Node.js</span><span>React</span><span>PostgreSQL</span><span>Supabase</span><span>Power BI</span>
                             </div>
                         </div>
                     </div>
@@ -228,20 +292,48 @@
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <span class="timeline-date" data-i18n="exp.rpg.date">Projeto Pessoal</span>
-                            <h3 class="timeline-title" data-i18n="exp.rpg.title">Plataforma de Fichas e Campanhas de RPG</h3>
-                            <div class="timeline-role" data-i18n="exp.rpg.role">Administrador e Analista de Dados</div>
-                            <p class="timeline-description" data-i18n="exp.rpg.desc">
-                                Plataforma Fullstack web robusta para gerenciamento de campanhas de RPG e criação de
-                                fichas, focada na experiência do usuário. API construída com React.js, Express.js e
-                                arquitetura de banco de dados PostgreSQL (Supabase).
+                            <span class="timeline-date" data-i18n="exp.escolarbh.date">2026</span>
+                            <h3 class="timeline-title">EscolarBH</h3>
+                            <div class="timeline-role" data-i18n="exp.escolarbh.role">Fullstack Developer (Web, API,
+                                Mobile & Geo)</div>
+                            <p class="timeline-description" data-i18n="exp.escolarbh.desc">
+                                Plataforma completa de transporte escolar: web em React/TS, API em Spring Boot (Kotlin),
+                                app mobile em React Native/Expo e microsserviço de geolocalização em Rust.
                             </p>
                             <div class="timeline-tech">
-                                <span>React.js</span>
-                                <span>Node.js</span>
-                                <span>Express.js</span>
-                                <span>PostgreSQL</span>
-                                <span>Supabase</span>
+                                <span>React</span><span>TS</span><span>Spring Boot</span><span>Kotlin</span><span>React Native</span><span>Rust</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date" data-i18n="exp.rpg.date">Pessoal</span>
+                            <h3 class="timeline-title" data-i18n="exp.rpg.title">Hystoria RPG</h3>
+                            <div class="timeline-role" data-i18n="exp.rpg.role">Fullstack Developer & UI/UX</div>
+                            <p class="timeline-description" data-i18n="exp.rpg.desc">
+                                Plataforma fullstack de campanhas de RPG e criação de fichas em React, Node e
+                                PostgreSQL (Supabase).
+                            </p>
+                            <div class="timeline-tech">
+                                <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Supabase</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date" data-i18n="exp.games.date">Game Dev</span>
+                            <h3 class="timeline-title" data-i18n="exp.games.title">Mods & Servidores de Minecraft</h3>
+                            <div class="timeline-role" data-i18n="exp.games.role">Mod Developer & Server Engineer</div>
+                            <p class="timeline-description" data-i18n="exp.games.desc">
+                                Mods Java/NeoForge (Monstros e Máquinas, Camera Compat Fix) e expansões de gameplay com
+                                KubeJS, FTB Quests e gating de crafting em servidores ativos.
+                            </p>
+                            <div class="timeline-tech">
+                                <span>Java</span><span>NeoForge</span><span>KubeJS</span><span>FTB Quests</span><span>Blockbench</span>
                             </div>
                         </div>
                     </div>
@@ -250,134 +342,26 @@
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="formacao" class="formation-section">
-            <div class="container">
-                <h2 class="section-title reveal" data-i18n="education.title">Formação Acadêmica</h2>
-                <div class="formation-cards reveal">
-                    <div class="formation-card">
-                        <h3 data-i18n="education.course">Análise e Desenvolvimento de Sistemas</h3>
-                        <div class="formation-institution">Newton Paiva Wyden</div>
-                        <div class="formation-date" data-i18n="education.date">Jan 2023 - Fev 2026</div>
-                        <p data-i18n="education.desc">Foco em engenharia de software, banco de dados e gestão de
-                            projetos tecnológicos.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Languages Section -->
-        <section id="idiomas" class="languages-section">
-            <div class="container">
-                <h2 class="section-title reveal" data-i18n="languages.title">Idiomas</h2>
-                <div class="languages-grid reveal">
-                    <div class="language-card">
-                        <h3 data-i18n="lang.pt">Português</h3>
-                        <div class="level" data-i18n="lang.native">Nativo</div>
-                    </div>
-                    <div class="language-card">
-                        <h3 data-i18n="lang.en">Inglês</h3>
-                        <div class="level">C2 - Proficient</div>
-                        <p class="lang-detail" data-i18n="lang.en.desc">Imersão
-                            diária (documentação, mídia, comunicação)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured Projects Section -->
-        <section id="projetos" class="projects-preview-section">
-            <div class="container">
-                <h2 class="section-title reveal" data-i18n="projects.title">Projetos em Destaque</h2>
-                <div class="projects-grid stagger-children">
-
-                    <article class="project-card reveal">
-                        <img src="img/SiteFichas_ARG.png" alt="Plataforma RPG" loading="lazy">
-                        <h3 data-i18n="project.rpg.title">Plataforma de RPG (Hystoria)</h3>
-                        <p data-i18n="project.rpg.desc">Sistema web completo para criação de fichas e gestão de
-                            campanhas de RPG Tormenta20.</p>
-                        <div class="card-tech-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>PostgreSQL</span>
-                            <span>Supabase</span>
-                        </div>
-                        <div class="card-buttons">
-                            <a href="projetos/sitefichas.html" class="button" data-i18n="btn.details">Ver Detalhes</a>
-                            <a href="https://hystoria-rpg.vercel.app" target="_blank" rel="noopener noreferrer" class="demo-link">Live Demo</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card reveal">
-                        <img src="img/SiteEstoque_DV.png" alt="Gerenciador de Estoque" loading="lazy">
-                        <h3 data-i18n="project.stock.title">Gerenciador de Estoque</h3>
-                        <p data-i18n="project.stock.desc">Sistema para otimização de controle de estoque e financeiro
-                            para loja de moda.</p>
-                        <div class="card-tech-tags">
-                            <span>Node.js</span>
-                            <span>Express.js</span>
-                            <span>PostgreSQL</span>
-                            <span>Supabase</span>
-                        </div>
-                        <div class="card-buttons">
-                            <a href="projetos/estoqueDV.html" class="button" data-i18n="btn.details">Ver Detalhes</a>
-                            <a href="https://github.com/suikkj/DemoPlanilhaDoceVeneno" target="_blank" rel="noopener noreferrer"
-                                class="github-link-small">GitHub</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card reveal">
-                        <img src="img/Site-ARG.png" alt="ARG Site" loading="lazy">
-                        <h3 data-i18n="project.arg.title">ARG - Enigmas</h3>
-                        <p data-i18n="project.arg.desc">Experiência interativa de mistério e puzzles com narrativa
-                            imersiva.</p>
-                        <div class="card-tech-tags">
-                            <span>JavaScript</span>
-                            <span>HTML/CSS</span>
-                            <span>UI/UX</span>
-                        </div>
-                        <div class="card-buttons">
-                            <a href="projetos/sitearg.html" class="button" data-i18n="btn.details">Ver Detalhes</a>
-                            <a href="https://github.com/suikkj/SiteARG" target="_blank" rel="noopener noreferrer"
-                                class="github-link-small">GitHub</a>
-                        </div>
-                    </article>
-
-                </div>
-                <div style="text-align: center; margin-top: 50px;" class="reveal">
-                    <a href="projetos.html" class="button" data-i18n="btn.viewAll">Ver Todos os Projetos</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
+        <!-- CONTACT -->
         <section id="contato" class="contact-section">
             <div class="container reveal">
+                <span class="section-kicker" data-i18n="contact.kicker">Contato</span>
                 <h2 class="section-title" data-i18n="contact.title">Vamos Conversar?</h2>
-                <p data-i18n="contact.text">Estou sempre aberto a novas oportunidades e colaborações. Entre em contato!
-                </p>
+                <p class="section-lead" data-i18n="contact.text" style="margin-top:14px;">Estou aberto a novas
+                    oportunidades e colaborações. Entre em contato!</p>
 
                 <div class="contact-links">
                     <a href="mailto:lucasoliprogramador@gmail.com" class="contact-link-item">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                        </svg>
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" /></svg>
                         lucasoliprogramador@gmail.com
                     </a>
                     <a href="https://www.linkedin.com/in/lucasoliveiradevfullstack/" target="_blank" rel="noopener noreferrer"
                         class="contact-link-item">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                        </svg>
+                        <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
                         LinkedIn
                     </a>
                     <a href="https://github.com/suikkj" target="_blank" rel="noopener noreferrer" class="contact-link-item">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
                         GitHub
                     </a>
                 </div>
@@ -385,24 +369,18 @@
         </section>
     </main>
 
-    <!-- Lightbox Modal -->
-    <div id="lightbox-modal" class="lightbox-modal">
-        <span class="lightbox-close">&times;</span>
-        <img class="lightbox-content" id="lightbox-image" src="#" alt="">
-        <div id="lightbox-caption"></div>
-    </div>
-
     <footer>
         <div class="container footer-content">
-            <div class="footer-social-links">
-                <!-- Social icons -->
-            </div>
             <p data-i18n="footer.copyright">&copy; <span id="current-year">2026</span> Lucas Oliveira. Todos os direitos
                 reservados.</p>
+            <div class="footer-links">
+                <a href="projetos.html" data-i18n="nav.projetos">Projetos</a>
+                <a href="sobre.html" data-i18n="nav.sobre">Sobre</a>
+                <a href="#">Topo ↑</a>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.9.1/i18next.min.js"></script>
     <script src="script.js"></script>
 </body>

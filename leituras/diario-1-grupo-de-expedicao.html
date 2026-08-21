@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Leitura - Lucas Oliveira"><title>Diário 1 - Grupo de Expedição - Lucas Oliveira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css"></head>
+<body class="reading-page">
+<div class="bg-grid"></div><div class="bg-glow bg-glow--2"></div><div class="scroll-progress" id="scroll-progress"></div>
+<header><div class="container"><a href="../index.html" class="logo">&lt;<b>lucas</b> /&gt;</a>
+<button class="hamburger-button" aria-label="Abrir menu"><span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span></button>
+<div class="navigation-wrapper"><nav class="main-nav">
+<a href="../index.html" data-i18n="nav.inicio">Início</a>
+<a href="../projetos.html" data-i18n="nav.projetos">Projetos</a>
+<a href="../criativo.html" data-i18n="nav.criativo">Criativo</a>
+<a href="../sobre.html" data-i18n="nav.sobre">Sobre Mim</a>
+</nav>
+<div class="language-selector header-language-selector"><select id="language-select"><option value="pt">PT-BR</option><option value="en">Eng</option></select></div>
+</div></div></header>
+<main><div class="container" style="padding-top:60px;"><div class="book-shell"><div class="book-head">
+<div class="crumb"><a href="../criativo.html" data-i18n="readBack">Voltar à Biblioteca</a></div>
+<h1 class="book-title" data-pt="Diário 1 - Grupo de Expedição" data-en="Diary 1 - Expedition Group">Diário 1 - Grupo de Expedição</h1>
+<div class="book-meta" data-pt="Diário · Expedição · Refúgio Cigarra" data-en="Diary · Expedition · Cigarra Shelter">Diário · Expedição · Refúgio Cigarra</div>
+<div class="lang-switch"><button type="button" data-set="pt" class="active">PT</button><button type="button" data-set="en">EN</button></div>
+</div>
+<div class="book leitura-pt"><p class="first"><strong>Dia 1</strong></p>
+<p>Finalmente saímos do Refúgio Cigarra após 2.740 anos. A superfície é... como foi descrito pelos cientistas da "T.U.R.". Ainda sim, é difícil acreditar que isso é o que restou. Em livros e fotografias, eu e o Nimbus sempre víamos como o mundo era antigamente. Os reinos. As árvores. Como que construções tão grandiosas se tornaram... apenas ruínas. Cascas vazias de algo que já foi cheio de vida.</p>
+<p><strong>Dia 2</strong></p>
+<p>A dificuldade avisada antes de sair, antes poderia apenas parecer exagero, mas agora eu entendo. Dormir na superfície.. Sequer se manter nela parece uma tarefa difícil. Diria impossível, dada a missão que nos foi dada. Não consigo ver esperança para essa terra. Não agora. Uma terra infértil, onde toda a vida foi sugada. É difícil entender se essa terra quer me sugar junto com o resto da vida ao redor.'</p>
+<p><strong>Dia 4</strong></p>
+<p>Saímos para explorar na superfície. Realmente as dicas que a "T.U.R." deu eram úteis. Ouro é realmente a chave para algumas coisas, mesmo que temporariamente. Encontramos o que parece ser ruínas de uma antiga vila. Me pergunto o que permitiu algumas construções se manterem mais do que outras. Foi sorte? Foi um outro povo que vivia aqui? Ou houve algum ato nisso. Independente, vamos tent-</p>
+<p><strong>Tem alguém aqui.</strong></p></div>
+<div class="book leitura-en"><p class="first"><strong>Day 1</strong></p>
+<p>We finally left the Cigarra Shelter after 2,740 years. The surface is... as described by the "T.U.R." scientists. Still, it's hard to believe this is what's left. In books and photographs, me and Nimbus always saw how the world used to be. The kingdoms. The trees. How could such grand constructions become... only ruins. Hollow shells of something once full of life.</p>
+<p><strong>Day 2</strong></p>
+<p>The difficulty warned about before leaving might have seemed like an exaggeration then, but now I understand. Sleeping on the surface... Even just staying on it seems like a hard task. I'd say impossible, given the mission we were given. I can't see hope for this land. Not now. An infertile land, where all life was drained. It's hard to tell whether this land wants to drain me along with the rest of the life around it.'</p>
+<p><strong>Day 4</strong></p>
+<p>We went out to explore the surface. The tips the "T.U.R." gave were indeed useful. Gold is really the key to some things, even if temporarily. We found what appear to be the ruins of an ancient village. I wonder what allowed some structures to hold up better than others. Was it luck? Was it another people who lived here? Or was there some act behind it. Either way, we'll tr-</p>
+<p><strong>There's someone here.</strong></p></div>
+</div></div></main>
+<footer><div class="container footer-content"><p data-i18n="footer.copyright">&copy; <span id="current-year">2026</span> Lucas Oliveira. Todos os direitos reservados.</p>
+<div class="footer-links"><a href="../index.html" data-i18n="nav.inicio">Início</a><a href="../criativo.html" data-i18n="nav.criativo">Criativo</a></div></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.9.1/i18next.min.js"></script>
+<script src="../script.js"></script>
+<script>(function(){function app(l){l=l||'pt';document.body.dataset.lang=l;document.querySelectorAll('.lang-switch button').forEach(function(b){b.classList.toggle('active',b.dataset.set===l);});[['.book-title','data-pt','data-en'],['.book-meta','data-pt','data-en']].forEach(function(s){var el=document.querySelector(s[0]);if(el){el.textContent=el.getAttribute(l==='en'?s[2]:s[1]);}});}var saved='pt';try{saved=localStorage.getItem('portfolio-lang')||'pt';}catch(e){}app(saved);document.querySelectorAll('.lang-switch button').forEach(function(b){b.addEventListener('click',function(){app(b.dataset.set);try{localStorage.setItem('portfolio-lang',b.dataset.set);}catch(e){}});});})();</script>
+</body></html>

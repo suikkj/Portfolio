@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalhes do projeto Modpack & Server Engineer - Lucas Oliveira">
+    <title>Projeto: Modpack & Server Engineer - Lucas Oliveira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-detail-page">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow--1"></div>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="logo">&lt;<b>lucas</b> /&gt;</a>
+            <button class="hamburger-button" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span>
+            </button>
+            <div class="navigation-wrapper">
+                <nav class="main-nav">
+                    <a href="../index.html" data-i18n="nav.inicio">Início</a>
+                    <a href="../projetos.html" data-i18n="nav.projetos">Projetos</a>
+                    <a href="../criativo.html" data-i18n="nav.criativo">Criativo</a>
+
+                    <a href="../sobre.html" data-i18n="nav.sobre">Sobre Mim</a>
+                </nav>
+                <div class="language-selector header-language-selector">
+                    <select id="language-select">
+                        <option value="pt">PT-BR</option>
+                        <option value="en">Eng</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="project-detail-hero">
+                <div class="crumb"><a href="../projetos.html" data-i18n="btn.back">Voltar aos Projetos</a></div>
+                <h1>Modpack & Server Engineer</h1>
+                <p class="subtitle">Dezenas de scripts de gameplay com KubeJS, gating por FTB Quests e manutenção de servidor ativo.</p>
+                <div class="detail-hero-meta"><span>KubeJS</span><span>JavaScript</span><span>FTB Quests</span><span>NeoForge</span><span>JSON</span></div>
+            </div>
+            <div class="project-detail-hero-img"><img src="../img/kubejs.svg" alt="Modpack & Server Engineer"></div>
+
+            <div class="detail-layout">
+                <article class="detail-article">
+                    <h2>Visão Geral</h2><p>Engenharia de gameplay e servidor para modpacks de Minecraft em NeoForge 1.21.1. Escrevi dezenas de scripts KubeJS que moldam a experiência: economia, receitas, mecânicas custom, loot e — destaque — o gating de crafting amarrado ao progresso de FTB Quests.</p><h2>Destaques técnicos</h2><ul><li>quest_locked_crafting.js: sistema que bloqueia o craft de mais de 40 itens até o jogador desbloquear a quest correspondente (cache por jogador recalculado a cada 2s)</li><li>Mecânicas de jogo: apocalipse/atributos, infecção, radiação, criação de dimensões</li><li>Receitas custom (Ex Nihilo, Immersive Engineering, Ars Nouveau) com guards de existência</li><li>Correção de loot, tags e estados de máquinas</li><li>Manutenção de crashes, migração de dados e diagnóstico de logs em servidor ativo</li></ul>
+                </article>
+                <aside class="detail-sidebar">
+                    <div class="detail-card">
+                        <h4>Ficha técnica</h4>
+                        <ul><li><span>Tipo</span><span>Game Dev / Server</span></li><li><span>Ferramentas</span><span>KubeJS + FTB Quests</span></li><li><span>Plataforma</span><span>NeoForge 1.21.1</span></li><li><span>Scripts</span><span>50+</span></li></ul>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Links</h4>
+                        <div class="detail-actions"></div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <p data-i18n="footer.copyright">&copy; <span id="current-year">2026</span> Lucas Oliveira. Todos os direitos reservados.</p>
+            <div class="footer-links"><a href="../index.html" data-i18n="nav.inicio">Início</a><a href="../projetos.html" data-i18n="nav.projetos">Projetos</a><a href="../sobre.html" data-i18n="nav.sobre">Sobre</a></div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.9.1/i18next.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

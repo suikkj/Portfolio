@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4c0519"/>
+      <stop offset="0.5" stop-color="#9d174d"/>
+      <stop offset="1" stop-color="#c026d3"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.3" cy="0.25" r="0.7">
+      <stop offset="0" stop-color="#f9a8d4" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#f9a8d4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <rect width="800" height="500" fill="url(#glow)"/>
+  <g opacity="0.12" stroke="#fbcfe8" stroke-width="1">
+    <path d="M0 250 H800 M0 125 H800 M0 375 H800"/>
+    <path d="M267 0 V500 M534 0 V500"/>
+  </g>
+  <!-- gift / ticket glyph -->
+  <g transform="translate(340,110)">
+    <rect x="0" y="26" width="120" height="70" rx="10" fill="#fff" opacity="0.95"/>
+    <path d="M60 0 C40 0 22 10 22 30 L60 30 L98 30 C98 10 80 0 60 0 Z" fill="#fff" opacity="0.7"/>
+    <path d="M60 0 v96" stroke="#c026d3" stroke-width="8"/>
+  </g>
+  <text x="400" y="280" font-family="Arial,Helvetica,sans-serif" font-size="44" font-weight="bold" fill="#fff" text-anchor="middle">Sorteio Doce Veneno</text>
+  <text x="400" y="320" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#fbcfe8" text-anchor="middle">Sorteios ao vivo integrados ao Instagram</text>
+  <g transform="translate(220,360)">
+    <g font-family="Arial" font-size="14">
+      <rect x="0" y="0" width="92" height="32" rx="16" fill="#fff" opacity="0.16"/>
+      <text x="46" y="21" text-anchor="middle" fill="#fff">React 19</text>
+      <rect x="102" y="0" width="86" height="32" rx="16" fill="#fff" opacity="0.16"/>
+      <text x="145" y="21" text-anchor="middle" fill="#fff">Vite</text>
+      <rect x="198" y="0" width="110" height="32" rx="16" fill="#fff" opacity="0.16"/>
+      <text x="253" y="21" text-anchor="middle" fill="#fff">Express 5</text>
+      <rect x="318" y="0" width="130" height="32" rx="16" fill="#fff" opacity="0.16"/>
+      <text x="383" y="21" text-anchor="middle" fill="#fff">Instagram API</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,4 @@
+.hermes/
+*.pyc
+.DS_Store
+*.py
